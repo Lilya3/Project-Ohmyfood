@@ -3,20 +3,32 @@
 @use 'button.scss';
 @use 'footer.scss';
 
+*{
+    margin: 0;
+}
+
 $second-txt:"shrikhand";
 $txt-header:normal;
 $txt-menu:"shrikhand";
 $main-txt:"roboto";
 $main-color: #9747FF;
 $sec-color:#ee68d1;
+$boxshadowdefault:0px 8px 24px rgba(0, 0, 0, 0.2);
 
 
-*{
-    margin: 0;
+.fa-mobile-screen-button,
+.fa-list-ul{
+    font-size: 25px;
+    color: grey;
 }
 
+.fa-store{
+    font-size: 25px;
+    color:#9747FF;
+}
+
+
 body{
-    max-width: 480px;
     font-family: $main-txt;
     font-style: normal;
     font-weight: 450;
@@ -26,6 +38,10 @@ body{
     width: 100%;
     max-width: 480px;
     box-sizing: border-box;
+}
+
+main{
+    margin: 3rem 1.5rem;
 }
 
 h1{
@@ -58,7 +74,7 @@ background: linear-gradient(175deg,$sec-color, $main-color,);
 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
 border: none;
 border-radius: 2rem;
-padding: 1rem 3rem;
+padding: 1.2rem 1.75rem;
 }
 
 .appBar{
@@ -102,3 +118,40 @@ padding: 1rem 3rem;
             margin-bottom: 2rem;
         }
 }
+
+.functioning{
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+        &__card{
+            background-color:rgba($color: grey, $alpha: 0.07) ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+            box-shadow: (0px 5px 10px rgba($color: black, $alpha: 0.15));
+            border-radius: 1.5rem;
+            margin:1rem;
+            padding: 30px 5px 25px 50px;
+        }
+            &__card__number{
+                position: absolute;
+                left: 1px;
+                border-radius: 50%;
+                background-color: #9747FF;
+                height: 2rem;
+                width: 2rem;
+                color: whitesmoke;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+}
+
