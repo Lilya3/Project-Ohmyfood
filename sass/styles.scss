@@ -55,11 +55,10 @@ font-family: $main-txt;
 font-size: 1.1rem;
 color: white;
 background: linear-gradient(175deg,$sec-color, $main-color,);
-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
 border: none;
-width: 50%;
 border-radius: 2rem;
-padding: 1.25rem;
+padding: 1rem 3rem;
 }
 
 .appBar{
