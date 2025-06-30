@@ -7,12 +7,12 @@
     margin: 0;
 }
 
-$second-txt:"shrikhand";
 $txt-header:normal;
 $txt-menu:"shrikhand";
 $main-txt:"roboto";
-$main-color: #9747FF;
-$sec-color:#ee68d1;
+$second-txt:"shrikhand";
+$main-color: #9356DC;
+$sec-color:#FF79DA;
 $boxshadowdefault:0px 8px 24px rgba(0, 0, 0, 0.2);
 
 
@@ -24,7 +24,7 @@ $boxshadowdefault:0px 8px 24px rgba(0, 0, 0, 0.2);
 
 .fa-store{
     font-size: 25px;
-    color:#9747FF;
+    color:$main-color;
 }
 
 
@@ -32,16 +32,16 @@ body{
     font-family: $main-txt;
     font-style: normal;
     font-weight: 450;
+    max-width: 480px;
 }
 
 .main__container{
     width: 100%;
-    max-width: 480px;
     box-sizing: border-box;
 }
 
 main{
-    margin: 3rem 1.5rem;
+    margin: 3rem 0 0 0;
 }
 
 h1{
@@ -53,6 +53,7 @@ h1{
 
 h2{
     font-size: 2rem;
+    margin-left: 1.5rem;
 }
 
 h4{
@@ -66,15 +67,23 @@ p{
 }
 
 
+.btn-large{
+    padding: 25px 30px ;
+}
+
+.btn-short{
+
+}
+
 button{
-font-family: $main-txt;
-font-size: 1.1rem;
-color: white;
-background: linear-gradient(175deg,$sec-color, $main-color,);
-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
-border: none;
-border-radius: 2rem;
-padding: 1.2rem 1.75rem;
+    font-family: $main-txt;
+    font-size: 1.4rem;
+    color: white;
+    background: linear-gradient(to bottom, $sec-color -25%, $main-color 100%);
+    box-shadow: $boxshadowdefault;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
 }
 
 .appBar{
@@ -83,6 +92,8 @@ padding: 1.2rem 1.75rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        box-shadow: (0px 2px 5px rgba(0, 0, 0, 0.2));
+
     }
         
     &__location{
@@ -94,13 +105,13 @@ padding: 1.2rem 1.75rem;
         width: 100%;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        box-shadow: (0px 3px 15px rgba(0, 0, 0, 0.6));
+        box-shadow: (0px 4px 5px rgba(0, 0, 0, 0.5));
         background-color: rgba($color: grey, $alpha: 0.25);
     }
 }
 
 .presentation {
-        background-color:rgba($color: whitesmoke, $alpha: 0.4);
+        background-color:rgba($color: whitesmoke, $alpha: 1);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -140,7 +151,7 @@ padding: 1.2rem 1.75rem;
                 position: absolute;
                 left: 1px;
                 border-radius: 50%;
-                background-color: #9747FF;
+                background-color: $main-color;
                 height: 2rem;
                 width: 2rem;
                 color: whitesmoke;
@@ -151,7 +162,61 @@ padding: 1.2rem 1.75rem;
             }
 
             p{
-                font-size: 18px;
+                font-size: 1.125rem;
             }
 }
 
+
+
+.restaurant{
+    background-color:rgba($color: whitesmoke, $alpha: 1);
+    padding-top: 4rem;
+  
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0 5rem 0;
+        }
+
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 1rem;
+            background-color: white;
+                
+                img{
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                }
+
+                h4{
+                padding-left: 0.5rem;
+                font-size: 1.125rem;
+                font-weight: bold;
+                }
+
+                p{
+                font-size: 1.06rem;
+                font-family: $txt-header;
+                padding-left: 0.5rem ;
+                }
+
+                i{
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+            
+            
+            &__content{
+                h4{
+                    display: flex;
+                    padding-top: 0.5rem;
+                }
+
+            }
+           
+
+            }

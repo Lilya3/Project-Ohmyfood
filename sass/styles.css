@@ -10,23 +10,23 @@
 
 .fa-store {
   font-size: 25px;
-  color: #9747FF;
+  color: #9356DC;
 }
 
 body {
   font-family: "roboto";
   font-style: normal;
   font-weight: 450;
+  max-width: 480px;
 }
 
 .main__container {
   width: 100%;
-  max-width: 480px;
   box-sizing: border-box;
 }
 
 main {
-  margin: 3rem 1.5rem;
+  margin: 3rem 0 0 0;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-left: 1.5rem;
 }
 
 h4 {
@@ -50,15 +51,19 @@ p {
   font-size: 1rem;
 }
 
+.btn-large {
+  padding: 25px 30px;
+}
+
 button {
   font-family: "roboto";
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: white;
-  background: linear-gradient(175deg, #ee68d1, #9747FF);
+  background: linear-gradient(to bottom, #FF79DA -25%, #9356DC 100%);
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   border: none;
-  border-radius: 2rem;
-  padding: 1.2rem 1.75rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
 }
 
 .appBar__name {
@@ -66,6 +71,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .appBar__location {
   display: flex;
@@ -76,12 +82,12 @@ button {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
   background-color: rgba(128, 128, 128, 0.25);
 }
 
 .presentation {
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: whitesmoke;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,7 +126,7 @@ button {
   position: absolute;
   left: 1px;
   border-radius: 50%;
-  background-color: #9747FF;
+  background-color: #9356DC;
   height: 2rem;
   width: 2rem;
   color: whitesmoke;
@@ -130,5 +136,45 @@ button {
   font-size: 20px;
 }
 .functioning p {
-  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.restaurant {
+  background-color: whitesmoke;
+  padding-top: 4rem;
+}
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 5rem 0;
+}
+.restaurant__menu {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+}
+.restaurant__menu img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurant__menu h4 {
+  padding-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.restaurant__menu p {
+  font-size: 1.06rem;
+  font-family: normal;
+  padding-left: 0.5rem;
+}
+.restaurant__menu i {
+  display: flex;
+  justify-content: end;
+}
+.restaurant__content h4 {
+  display: flex;
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
