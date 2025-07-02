@@ -55,7 +55,7 @@ p {
   padding: 25px 30px;
 }
 
-button {
+.btn {
   font-family: "roboto";
   font-size: 1.4rem;
   color: white;
@@ -147,34 +147,37 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5rem 0 5rem 0;
+  padding: 1rem 0 5rem 0;
 }
-.restaurant__menu {
+.restaurant .restaurant__card__menu {
   display: flex;
   flex-direction: column;
   border: none;
   border-radius: 1rem;
   background-color: white;
+  width: 90%;
+  margin-bottom: 1.5rem;
 }
-.restaurant__menu img {
+.restaurant .restaurant__card__menu__photo {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  width: 100%;
 }
-.restaurant__menu h4 {
-  padding-left: 0.5rem;
+.restaurant .restaurant__card__menu__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant .restaurant__card__menu__content__heart {
+  padding-right: 1.5rem;
+}
+.restaurant .restaurant__card__menu__content h4 {
+  padding: 0.5em 0 0.1rem 1rem;
   font-size: 1.125rem;
   font-weight: bold;
 }
-.restaurant__menu p {
+.restaurant .restaurant__card__menu__content p {
   font-size: 1.06rem;
-  font-family: normal;
-  padding-left: 0.5rem;
-}
-.restaurant__menu i {
-  display: flex;
-  justify-content: end;
-}
-.restaurant__content h4 {
-  display: flex;
-  padding-top: 0.5rem;
+  padding: 0 0 1rem 1rem;
+  font-weight: 250;
 }/*# sourceMappingURL=styles.css.map */

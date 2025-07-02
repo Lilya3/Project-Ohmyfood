@@ -13,7 +13,8 @@ $main-txt:"roboto";
 $second-txt:"shrikhand";
 $main-color: #9356DC;
 $sec-color:#FF79DA;
-$boxshadowdefault:0px 8px 24px rgba(0, 0, 0, 0.2);
+$ter-color:#99E2D0;
+$boxshadowdefault: 0px 8px 24px rgba(0, 0, 0, 0.2);
 
 
 .fa-mobile-screen-button,
@@ -75,7 +76,7 @@ p{
 
 }
 
-button{
+.btn{
     font-family: $main-txt;
     font-size: 1.4rem;
     color: white;
@@ -176,47 +177,46 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0.5rem 0 5rem 0;
+        padding: 1rem 0 5rem 0;
         }
 
-        &__menu{
-            display: flex;
-            flex-direction: column;
-            border: none;
-            border-radius: 1rem;
-            background-color: white;
+.restaurant__card__menu{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    width: 90%;
+    margin-bottom: 1.5rem;
                 
-                img{
-                    border-top-left-radius: 1rem;
-                    border-top-right-radius: 1rem;
-                }
+    &__photo{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        width: 100%;
+        }
 
-                h4{
-                padding-left: 0.5rem;
-                font-size: 1.125rem;
-                font-weight: bold;
-                }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-                p{
-                font-size: 1.06rem;
-                font-family: $txt-header;
-                padding-left: 0.5rem ;
-                }
-
-                i{
-                    display: flex;
-                    justify-content: end;
-                }
+        &__heart{
+            padding-right: 1.5rem;
             }
-            
-            
-            &__content{
-                h4{
-                    display: flex;
-                    padding-top: 0.5rem;
-                }
 
+        h4{
+            padding: 0.5em 0 0.1rem 1rem;
+            font-size: 1.125rem;
+            font-weight: bold;
             }
-           
 
+        p{
+            font-size: 1.06rem;
+            padding: 0 0 1rem 1rem ;
+            font-weight:250;
             }
+        }           
+    }               
+}
+
+
