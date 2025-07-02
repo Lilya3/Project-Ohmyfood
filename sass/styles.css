@@ -180,4 +180,26 @@ p {
   font-size: 1.06rem;
   padding: 0 0 1rem 1rem;
   font-weight: 250;
+}
+
+footer {
+  background-color: #353535;
+}
+footer h3 {
+  padding: 2rem 0 0 1.5rem;
+  color: white;
+  font-family: "shrikhand";
+  font-weight: 500;
+}
+footer nav {
+  padding-bottom: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 1rem 0 0 1.5rem;
+}
+footer a img {
+  padding-right: 1rem;
 }/*# sourceMappingURL=styles.css.map */
