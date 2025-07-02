@@ -4,12 +4,12 @@
 
 .fa-mobile-screen-button,
 .fa-list-ul {
-  font-size: 25px;
+  font-size: 20px;
   color: grey;
 }
 
 .fa-store {
-  font-size: 25px;
+  font-size: 20px;
   color: #9356DC;
 }
 
@@ -25,8 +25,8 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  margin: 3rem 0 0 0;
+section {
+  padding: 2rem 0 0 0;
 }
 
 h1 {
@@ -48,11 +48,11 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .btn-large {
-  padding: 25px 30px;
+  padding: 22px 30px;
 }
 
 .btn {
@@ -73,7 +73,8 @@ p {
   justify-content: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.appBar__location {
+
+.bar {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -92,10 +93,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3rem;
+  padding: 3rem 0 3rem 0;
 }
 .presentation h2 {
-  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -110,8 +110,12 @@ p {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  margin-left: 1.5rem;
 }
-.functioning__card {
+.functioning h2 {
+  margin: 0;
+}
+.functioning__card__container {
   background-color: rgba(128, 128, 128, 0.07);
   display: flex;
   flex-direction: row;
@@ -119,24 +123,26 @@ p {
   gap: 1.5rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   border-radius: 1.5rem;
-  margin: 1rem;
-  padding: 30px 5px 25px 50px;
+  margin: 2rem;
+  padding: 2rem 0 2rem 2.5rem;
 }
-.functioning__card__number {
+.functioning__card__container__number {
   position: absolute;
-  left: 1px;
+  left: 15px;
   border-radius: 50%;
   background-color: #9356DC;
-  height: 2rem;
-  width: 2rem;
+  height: 1.75rem;
+  width: 1.75rem;
   color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 16px;
 }
-.functioning p {
-  font-size: 1.125rem;
+.functioning__card__container__content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .restaurant {

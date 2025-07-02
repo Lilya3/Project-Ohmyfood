@@ -23,13 +23,15 @@
             <div class="appBar__name">
                 <h1>ohmyfood</h1>
             </div>
-            <div class="appBar__location">
-                <img class="appBar__location__logo" src="assets/Pin.svg" alt="localisation restaurants">
-                <p>Paris, Belleville</p>
-                </div>
-            </div>
+        </header>
 
-             <div class="presentation">
+        <main>
+            <section class="bar">
+                <img class="bar__location" src="assets/Pin.svg" alt="localisation restaurants">
+                <p>Paris, Belleville</p>
+            </section>
+
+             <section class="presentation">
                 <h2>Réservez le menu qui<br>
                     vous convient</h2>
                 <h4>Découvrez des restaurants d'exception,<br>
@@ -37,30 +39,36 @@
             <div>
                 <button class="btn btn-large">Explorer nos restaurants</button>
             </div>
-             </div>
-
-        </header>
-
-        <main>
+             </section>
             
             <section class="functioning">
                 <h2>Fonctionnement</h2>
                 <div class="functioning__card">
-                    <span class="functioning__card__number">1</span>
-                        <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
-                        <p>Choisissez un restaurant</p>
-                </div>
 
-                <div class="functioning__card">
-                    <span class="functioning__card__number">2</span>
-                    <i class="fa-solid fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </div>
+                    <div class="functioning__card__container">
+                        <span class="functioning__card__container__number">1</span>
+                        <div class="functioning__card__container__content">    
+                            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                    </div>
 
-                <div class="functioning__card">
-                    <span class="functioning__card__number">3</span>
-                    <i class="fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>
+                    <div class="functioning__card__container">
+                        <span class="functioning__card__container__number">2</span>
+                        <div class="functioning__card__container__content">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </div>
+
+                    <div class="functioning__card__container">
+                        <span class="functioning__card__container__number">3</span>
+                        <div class="functioning__card__container__content">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -106,7 +114,7 @@
                                     <h4>À la francaise</h4>
                                     <p>Cité Rouge</p>
                                 </div>
-                            <img class="restaurant__card__menu__content__heart" src="assets/heart.svg" alt="bouton like">
+                                <img class="restaurant__card__menu__content__heart" src="assets/heart.svg" alt="bouton like">
                             </div>
                         </div>
 
@@ -124,7 +132,7 @@
                     </div>
             </section>
         </main>
-
+    </div>
             <footer>
                 <h3 >ohmyfood</h3>
                 <nav>
@@ -141,7 +149,5 @@
                     <a href=""> <p class="roboto--regular">Contact</p></a>
                 </nav>
             </footer>
-
-    </div>
-</body>
+    </body>
 </html>
