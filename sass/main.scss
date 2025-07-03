@@ -1,20 +1,10 @@
-@use'header.scss' ;
-@use 'menu.scss' ;
-@use 'button.scss';
-@use 'footer.scss';
+@use 'base' as *;
+@use 'variables' as *;
+
 
 *{
     margin: 0;
 }
-
-$txt-header:normal;
-$txt-menu:"shrikhand";
-$main-txt:"roboto";
-$second-txt:"shrikhand";
-$main-color: #9356DC;
-$sec-color:#FF79DA;
-$ter-color:#99E2D0;
-$boxshadowdefault: 0px 8px 24px rgba(0, 0, 0, 0.2);
 
 
 .fa-mobile-screen-button,
@@ -70,32 +60,6 @@ p{
 }
 
 
-.btn-large{
-    padding: 22px 30px ;
-}
-
-.btn{
-    font-family: $main-txt;
-    font-size: 1.4rem;
-    color: white;
-    background: linear-gradient(to bottom, $sec-color -25%, $main-color 100%);
-    box-shadow: $boxshadowdefault;
-    border: none;
-    border-radius: 2.5rem;
-    cursor: pointer;
-}
-
-.appBar{
-    &__name{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        box-shadow: (0px 2px 5px rgba(0, 0, 0, 0.2));
-
-    }
-}
-
 .bar{
     display: flex;
     flex-wrap:nowrap;
@@ -105,18 +69,24 @@ p{
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    box-shadow: (0px 4px 5px rgba(0, 0, 0, 0.5));
-    background-color: rgba($color: grey, $alpha: 0.25);
+    background-color: rgba(grey, $alphasec);
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
     }
 
 
 .presentation {
-        background-color:rgba($color: whitesmoke, $alpha: 1);
+        background-color:rgba(whitesmoke, $alpha);
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 3rem 0 3rem 0;
+        position: relative;
+        z-index: 1;
+        
+
 
         h2{
             margin-bottom: 1rem;
@@ -143,12 +113,12 @@ p{
 
         &__card{
             &__container{
-                background-color:rgba($color: grey, $alpha: 0.07) ;
+                background-color:rgba(whitesmoke, $alpha);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 1.5rem;
-                box-shadow: (0px 5px 10px rgba($color: black, $alpha: 0.15));
+                box-shadow: 0px 5px 10px rgba(black, 0.15);
                 border-radius: 1.5rem;
                 margin:2rem;
                 padding: 2rem 0 2rem 2.5rem;
@@ -180,7 +150,7 @@ p{
 
 
 .restaurant{
-    background-color:rgba($color: whitesmoke, $alpha: 1);
+    background-color:rgba(whitesmoke, $alpha);
     padding-top: 4rem;
   
     &__card{
@@ -229,27 +199,4 @@ p{
     }               
 }
 
-footer{
-    background-color: #353535;
-    h3{
-        padding:2rem 0 0 1.5rem;
-        color: white;
-        font-family: $txt-menu;
-        font-weight: 500;
-    }
 
-    nav{
-        padding-bottom: 2rem;
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-        display: flex;
-        padding: 1rem 0 0 1.5rem;
-
-        img{
-            padding-right: 1rem;
-        }
-    }
-}

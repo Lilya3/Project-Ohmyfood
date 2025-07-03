@@ -1,3 +1,48 @@
+.appBar__name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-large {
+  padding: 22px 30px;
+}
+
+.btn {
+  font-family: "roboto";
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(to bottom, #FF79DA -25%, #9356DC 100%);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #353535;
+}
+footer h3 {
+  padding: 2rem 0 0 1.5rem;
+  color: white;
+  font-family: "shrikhand";
+  font-weight: 500;
+}
+footer nav {
+  padding-bottom: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 1rem 0 0 1.5rem;
+}
+footer a img {
+  padding-right: 1rem;
+}
+
 * {
   margin: 0;
 }
@@ -51,29 +96,6 @@ p {
   font-size: 1.2rem;
 }
 
-.btn-large {
-  padding: 22px 30px;
-}
-
-.btn {
-  font-family: "roboto";
-  font-size: 1.4rem;
-  color: white;
-  background: linear-gradient(to bottom, #FF79DA -25%, #9356DC 100%);
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
-  border: none;
-  border-radius: 2.5rem;
-  cursor: pointer;
-}
-
-.appBar__name {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .bar {
   display: flex;
   flex-wrap: nowrap;
@@ -83,17 +105,21 @@ p {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
-  background-color: rgba(128, 128, 128, 0.25);
+  background-color: rgba(128, 128, 128, 0.1);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
 }
 
 .presentation {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.4);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0 3rem 0;
+  position: relative;
+  z-index: 1;
 }
 .presentation h2 {
   margin-bottom: 1rem;
@@ -116,7 +142,7 @@ p {
   margin: 0;
 }
 .functioning__card__container {
-  background-color: rgba(128, 128, 128, 0.07);
+  background-color: rgba(245, 245, 245, 0.4);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,7 +172,7 @@ p {
 }
 
 .restaurant {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.4);
   padding-top: 4rem;
 }
 .restaurant__card {
@@ -186,26 +212,4 @@ p {
   font-size: 1.06rem;
   padding: 0 0 1rem 1rem;
   font-weight: 250;
-}
-
-footer {
-  background-color: #353535;
-}
-footer h3 {
-  padding: 2rem 0 0 1.5rem;
-  color: white;
-  font-family: "shrikhand";
-  font-weight: 500;
-}
-footer nav {
-  padding-bottom: 2rem;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  padding: 1rem 0 0 1.5rem;
-}
-footer a img {
-  padding-right: 1rem;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

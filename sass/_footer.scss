@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+
+
+footer{
+    background-color: #353535;
+    h3{
+        padding:2rem 0 0 1.5rem;
+        color: white;
+        font-family: $txt-menu;
+        font-weight: 500;
+    }
+
+    nav{
+        padding-bottom: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        padding: 1rem 0 0 1.5rem;
+
+        img{
+            padding-right: 1rem;
+        }
+    }
+}

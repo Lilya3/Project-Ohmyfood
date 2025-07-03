@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.btn-large{
+    padding: 22px 30px ;
+}
+
+.btn{
+    font-family: $main-txt;
+    font-size: 1.4rem;
+    color: white;
+    background: linear-gradient(to bottom, $sec-color -25%, $main-color 100%);
+    box-shadow: $boxshadowdefault;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}

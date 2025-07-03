@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+
+.appBar{
+    &__name{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: (0px 2px 5px rgba(0, 0, 0, 0.2));
+
+    }
+}
