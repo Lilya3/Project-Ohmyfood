@@ -1,1 +1,100 @@
 @use 'variables' as *;
+
+
+
+
+.hero{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+    }
+}
+
+//-----------????????????----------- 
+.menu{
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background-color: whitesmoke;
+    margin-top: -60px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color:whitesmoke;
+
+        &__dishe{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            width: 100%; // responsive + largeur titre coeur ??
+            
+            h1{
+                font-size: 1.75rem;
+                margin: 0;
+            }
+
+            &__heart{
+                height: 30px;
+                width: 25px;
+            }
+        &__card{
+            padding-top: 2rem;
+            &__title{
+                border-bottom: solid 3px $color-tertiary;
+                width: 11.5%;
+                    h4{
+                        padding: 1rem 0 0.3rem 0;
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            &__container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                border: none;
+                border-radius: 1rem;
+                background-color: white;
+                margin-top: 1rem;
+                padding: 0.8rem;
+                box-shadow: $boxshadowdefault;
+
+                span{
+                        display: flex;
+                        font-weight: 800;
+                        color: #353535;
+                        align-items: end;
+                    }
+
+                &__content{
+
+                    h3{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-weight: 250;
+                        font-size: 15.04px;
+                    }
+                }
+
+            }
+        }
+        }
+
+
+}
+
+

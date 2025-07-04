@@ -5,10 +5,10 @@
 }
 
 .btn{
-    font-family: $main-txt;
+    font-family: $font-family-body;
     font-size: 1.4rem;
     color: white;
-    background: linear-gradient(to bottom, $sec-color -25%, $main-color 100%);
+    background: linear-gradient(to bottom, $color-secondary -25%, $color-primary 100%);
     box-shadow: $boxshadowdefault;
     border: none;
     border-radius: 2.5rem;

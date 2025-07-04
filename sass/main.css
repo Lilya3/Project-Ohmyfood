@@ -1,9 +1,97 @@
 .appBar__name {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.appBar__name__goback {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 35px;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.menu {
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background-color: whitesmoke;
+  margin-top: -60px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: whitesmoke;
+}
+.menu__dishe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.menu__dishe h1 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+.menu__dishe__heart {
+  height: 30px;
+  width: 25px;
+}
+.menu__dishe__card {
+  padding-top: 2rem;
+}
+.menu__dishe__card__title {
+  border-bottom: solid 3px #99E2D0;
+  width: 11.5%;
+}
+.menu__dishe__card__title h4 {
+  padding: 1rem 0 0.3rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.menu__dishe__card__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.menu__dishe__card__container span {
+  display: flex;
+  font-weight: 800;
+  color: #353535;
+  align-items: end;
+}
+.menu__dishe__card__container__content h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__dishe__card__container__content p {
+  font-weight: 250;
+  font-size: 15.04px;
 }
 
 .btn-large {
@@ -15,7 +103,7 @@
   font-size: 1.4rem;
   color: white;
   background: linear-gradient(to bottom, #FF79DA -25%, #9356DC 100%);
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 2.5rem;
   cursor: pointer;
@@ -66,7 +154,6 @@ body {
 }
 
 .main__container {
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -77,6 +164,7 @@ section {
 h1 {
   text-align: center;
   margin: 1rem;
+  font-size: 1.875rem;
   font-family: "shrikhand";
   font-weight: normal;
 }
@@ -105,8 +193,8 @@ p {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(128, 128, 128, 0.1);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  background-color: rgba(194, 194, 194, 0.4);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
 }

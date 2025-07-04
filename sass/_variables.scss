@@ -1,10 +1,16 @@
-$txt-header:normal;
-$txt-menu:"shrikhand";
-$main-txt:"roboto";
-$second-txt:"shrikhand";
-$main-color: #9356DC;
-$sec-color:#FF79DA;
-$ter-color:#99E2D0;
-$boxshadowdefault: 0px 8px 24px rgba(0, 0, 0, 0.2);
-$alpha: 0.4;
-$alphasec:0.1;
+//=== Polices ===
+$font-weight-header:normal;
+$font-family-title:"shrikhand";
+$font-family-body:"roboto";
+$font-family-secondary:"shrikhand";
+
+//=== Colors ===
+$color-primary: #9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$boxshadowdefault: 0px 5px 10px rgba(black, 0.15);
+
+//=== Opacités ===
+$opacity-hard:0.3;
+$opacity-medium: 0.4;
+$opacity-light:0.1;
