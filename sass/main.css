@@ -95,7 +95,12 @@
 }
 
 .btn-large {
-  padding: 22px 30px;
+  padding: 20px 30px;
+}
+
+.btn-short {
+  padding: 20px 15px;
+  margin: 2rem;
 }
 
 .btn {
