@@ -12,9 +12,15 @@
         &__goback{
             position: absolute;
             left: 20px;
-            top: 20px;
+            top: 23px;
             height: 35px;
-
         }
+
+        &__logo{
+            position: relative;
+            padding: 1.5rem;
+        }
+
+        
     }
 }

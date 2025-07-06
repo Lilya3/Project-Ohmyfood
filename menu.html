@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="images/logo/ohmyfood.png" />
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="accueil" href="accueil.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Menu - La palette du goût</title>
 </head>
+
 <body>
     <div class="main-container">
 
@@ -17,133 +23,136 @@
             <div class="appBar__name">
                 <a href="accueil.html">
                 <img class="appBar__name__goback" src="assets/GoBack.svg" alt="Flèche de retour"></a>
-                <h1>ohmyfood</h1>
+                <img class="appBar__name__logo" src="assets/ohmyfood@2x.svg" alt="Logo ohmyfood">
             </div>
         </header>
 
         <main>
-                <div class="hero">
-                    <img src="restaurants/la_palette_du_gout_menu.svg" alt="La palette du goût">
-                </div>
+            <div class="hero">
+                <img src="restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+            </div>
 
             <section class="menu">
                     <div class="menu__dishe">
                         <h1>La palette du goût</h1>
                         <img class="menu__dishe__heart"src="assets/heart.svg">
                     </div>
-                <div class="menu__dishe__card">
-                    <div class="menu__dishe__card__title">
-                        <h4>ENTRÉES</h4>
-                    </div>
 
-                <div class="menu__dishe__card__box">
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Fricassée d'escargots</h3>
-                            <p>Au piment d'Espelette</p>
+                    <div class="menu__card">
+                        <div class="menu__card__title">
+                            <h4>ENTRÉES</h4>
                         </div>
-                        <span>25 €</span>
-                    </div>
 
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Foie gras de canard mi-cuit</h3>
-                            <p>Et ses copeaux de truffe noire</p>
-                        </div>
-                        <span>35 €</span>
-                    </div>
+                        <div class="menu__card__box">
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Fricassée d'escargots</h3>
+                                    <p>Au piment d'Espelette</p>
+                                </div>
+                                <span>25 €</span>
+                            </div>
 
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Œuf au plat</h3>
-                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Foie gras de canard mi-cuit</h3>
+                                    <p>Et ses copeaux de truffe noire</p>
+                                </div>
+                                <span>35 €</span>
+                            </div>
+
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Œuf au plat</h3>
+                                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <span>20 €</span>
+                            </div>
                         </div>
-                        <span>20 €</span>
-                    </div>
-                </div>
                 
                 
-                <div class="menu__dishe__card__title">
-                    <h4>PLATS</h4>
-                </div>
-
-                <div class="menu__dishe__card__box">
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Filet de boeuf aux herbes</h3>
-                            <p>Accompagné de sa ribambelle de légumes</p>
+                        <div class="menu__card__title">
+                            <h4>PLATS</h4>
                         </div>
-                        <span>40 €</span>
-                    </div>
 
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Parmentier de queue de boeuf</h3>
-                            <p>À la truffe noire sur sa purée de panais</p>
+                        <div class="menu__card__box">
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Filet de boeuf aux herbes</h3>
+                                    <p>Accompagné de sa ribambelle de légumes</p>
+                                </div>
+                                <span>40 €</span>
+                            </div>
+
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Parmentier de queue de boeuf</h3>
+                                    <p>À la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <span>35 €</span>
+                            </div>
+
+                            <div class="menu__card__box__container">
+                                <div class="menu__card__box__container__content">
+                                    <h3>Filet de turbot</h3>
+                                    <p>Aux agrumes</p>
+                                </div>
+                                <span>44 €</span>
+                            </div>
                         </div>
-                        <span>35 €</span>
-                    </div>
 
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Filet de turbot</h3>
-                            <p>Aux agrumes</p>
+                        <div class="menu__card__title">
+                            <h4>DESSERTS</h4>
                         </div>
-                        <span>44 €</span>
-                    </div>
-                </div>
 
-                <div class="menu__dishe__card__title">
-                    <h4>DESSERTS</h4>
-                </div>
+                            <div class="menu__card__box">
+                                <div class="menu__card__box__container">
+                                    <div class="menu__card__box__container__content">
+                                        <h3>Paris-Brest</h3>
+                                        <p>Revisité</p>
+                                    </div>
+                                    <span>18 €</span>
+                                </div>
 
-                <div class="menu__dishe__card__box">
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Paris-Brest</h3>
-                            <p>Revisité</p>
+                                <div class="menu__card__box__container">
+                                    <div class="menu__card__box__container__content">
+                                        <h3>Macaron au chocolat d'exception</h3>
+                                        <p>Et glace à la vanille de Madagascar</p>
+                                    </div>
+                                    <span>22 €</span>
+                                </div>
+
+                                <div class="menu__card__box__container">
+                                    <div class="menu__card__box__container__content">
+                                        <h3>Mousse au chocolat</h3>
+                                        <p>Au piment d'Espelette et à la truffe noire</p>
+                                    </div>
+                                    <span>23 €</span>
+                                </div>
+                            </div>                
                         </div>
-                        <span>18 €</span>
-                    </div>
 
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Macaron au chocolat d'exception</h3>
-                            <p>Et glace à la vanille de Madagascar</p>
-                        </div>
-                        <span>22 €</span>
+                    <div class="btn-position">
+                        <button class="btn btn-short">Commander</button>
                     </div>
-
-                    <div class="menu__dishe__card__container">
-                        <div class="menu__dishe__card__container__content">
-                            <h3>Mousse au chocolat</h3>
-                            <p>Au piment d'Espelette et à la truffe noire</p>
-                        </div>
-                        <span>23 €</span>
-                    </div>
-                </div>
-                
-                    <button class="btn btn-short">Commander</button>
-                </div>
             </section>
         </main>
 
         <footer>
-                <h3>ohmyfood</h3>
-                <nav>
-                    <a href="">
-                        <img src="assets/restaurant.svg" alt="Icone de restaurant">
-                        <p class="roboto--medium">Proposer un restaurant</p>
-                    </a>
+            <h3>ohmyfood</h3>
+            <nav>
+                <a href="">
+                    <img src="assets/restaurant.svg" alt="Icone de restaurant">
+                    <p class="roboto--medium">Proposer un restaurant</p>
+                </a>
 
-                    <a href="">
-                        <img src="assets/partner.svg" alt="icone poigné de mains">
-                        <p class="roboto--medium">Devenir partenaire</p>
-                    </a>
-                    <a href=""> <p class="roboto--regular">Mentions Légales</p></a>
-                    <a href=""> <p class="roboto--regular">Contact</p></a>
-                </nav>
-            </footer>
+                <a href="">
+                    <img src="assets/partner.svg" alt="icone poigné de mains">
+                    <p class="roboto--medium">Devenir partenaire</p>
+                </a>
+                <a href=""> <p class="roboto--regular">Mentions Légales</p></a>
+                <a href=""> <p class="roboto--regular">Contact</p></a>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>

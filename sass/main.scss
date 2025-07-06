@@ -9,12 +9,12 @@
 
 .fa-mobile-screen-button,
 .fa-list-ul{
-    font-size: 20px;
+    font-size: 25px;
     color: grey;
 }
 
 .fa-store{
-    font-size: 20px;
+    font-size: 25px;
     color:$color-primary;
 }
 
@@ -39,7 +39,7 @@ section{
 h1{
     text-align: center;
     margin: 1rem;
-    font-size: 1.875rem;
+    font-size: 2.25rem;
     font-family: $font-family-secondary;
     font-weight: $font-weight-header;
 }
@@ -121,21 +121,21 @@ p{
                 gap: 1.5rem;
                 box-shadow: $boxshadowdefault;
                 border-radius: 1.5rem;
-                margin:2rem;
+                margin:2rem 2rem 2rem 1rem;
                 padding: 2rem 0 2rem 2.5rem;
                 
                 &__number{
                     position: absolute;
-                    left: 15px;
+                    left: 2px;
                     border-radius: 50%;
                     background-color: $color-primary;
-                    height: 1.75rem;
-                    width: 1.75rem;
+                    height: 1.8rem;
+                    width: 1.8rem;
                     color: whitesmoke;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 16px;
+                    font-size: 15.5px;
                 }
 
                 &__content{
@@ -151,7 +151,7 @@ p{
 
 
 .restaurant{
-    background-color:rgba(whitesmoke, $opacity-medium);
+    background-color:whitesmoke;
     padding-top: 4rem;
   
     &__card{
@@ -168,13 +168,42 @@ p{
     border-radius: 1rem;
     background-color: white;
     width: 90%;
-    margin-bottom: 1.5rem;
-                
-    &__photo{
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    &__container{
+        position: relative;
+        display: block;
+        overflow: hidden;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        width: 100%;
+
+        &__image{
+            width: 100%;
+            height: 200px;
+            background-image:url("/restaurants/la_palette_du_gout.jpg");
+            background-size: cover;
+            background-position: center 80%;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
         }
+    
+        &__label{
+            position: absolute;
+            top: 0.7rem;
+            right: 1.3rem;
+            background-color: $color-tertiary;
+            color: #008766;
+            border-radius: 0.2rem;
+            padding: 0.5rem 1.1rem;
+            z-index: 1;
+
+                p{
+                    font-size: 14px;
+                    margin: 0;
+            }
+        }
+    }
 
     &__content{
         display: flex;
@@ -199,5 +228,6 @@ p{
         }           
     }               
 }
+
 
 
