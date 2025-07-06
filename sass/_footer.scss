@@ -4,15 +4,19 @@
 
 footer{
     background-color: #353535;
-    h3{
-        padding:2rem 0 0 1.5rem;
-        color: white;
-        font-family: $font-family-title;
-        font-weight: 500;
+    .logo{
+        margin: -0.8rem;
+        padding-top:2rem;
+        filter: invert(1);
+        transform: scale(0.7);
     }
 
     nav{
         padding-bottom: 2rem;
+
+        a p{
+            font-weight: 400;
+        }
     }
 
     a{
@@ -22,7 +26,9 @@ footer{
         padding: 1rem 0 0 1.5rem;
 
         img{
+            padding-left: 0.5rem;
             padding-right: 1rem;
+            transform: scale(1.5);
         }
     }
 }

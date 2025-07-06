@@ -124,14 +124,17 @@
 footer {
   background-color: #353535;
 }
-footer h3 {
-  padding: 2rem 0 0 1.5rem;
-  color: white;
-  font-family: "shrikhand";
-  font-weight: 500;
+footer .logo {
+  margin: -0.8rem;
+  padding-top: 2rem;
+  filter: invert(1);
+  transform: scale(0.7);
 }
 footer nav {
   padding-bottom: 2rem;
+}
+footer nav a p {
+  font-weight: 400;
 }
 footer a {
   text-decoration: none;
@@ -140,7 +143,9 @@ footer a {
   padding: 1rem 0 0 1.5rem;
 }
 footer a img {
+  padding-left: 0.5rem;
   padding-right: 1rem;
+  transform: scale(1.5);
 }
 
 * {
@@ -313,12 +318,12 @@ p {
   top: 1rem;
   right: 1rem;
   background-color: #99E2D0;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   padding: 0.5rem 1rem;
   z-index: 1;
 }
 .restaurant .restaurant__card__menu__container__label p {
-  font-size: 14px;
+  font-size: 15px;
   color: #008766;
   margin: 0;
 }
@@ -326,6 +331,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1rem 0 1rem 0;
 }
 .restaurant .restaurant__card__menu__content__heart {
   padding-right: 1.5rem;
