@@ -58,17 +58,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: relative;
+  right: 0.5rem;
 }
 .menu__dishe h1 {
-  font-size: 2.2rem;
   margin: 0;
 }
 .menu__dishe__heart {
   display: block;
-  position: relative;
-  height: 25px;
-  right: 3rem;
 }
 .menu__card {
   padding-top: 1rem;
