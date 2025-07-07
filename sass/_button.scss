@@ -1,18 +1,24 @@
 @use 'variables' as *;
 
+button{
+    text-decoration: none;
+    font-family: $font-family-body;
+    outline: none;
+    border: none;
+}
+
 .btn-large{
-    padding: 20px 30px ;
+    padding: 18px 30px ;
 }
 
 .btn-short{
-    padding: 1.3rem 4.5rem;
-    font-weight: 450;
+    padding: 1.1rem 4rem;
+    font-weight: $fw-medium;
 }
 
 .btn{
-    font-family: $font-family-body;
-    font-size: 1.4rem;
     color: white;
+    font-size: $fs-medium;
     background: linear-gradient(175deg, $color-secondary, $color-primary);
     box-shadow: $boxshadowdefault;
     border: none;
