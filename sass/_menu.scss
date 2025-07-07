@@ -10,13 +10,20 @@
     width: 100%;
     overflow: hidden;
 
-        img{
+        &__menu{
             width: 100%;
             height: 100%;
             transform: scale(1.1);
             object-fit: cover;
             display: block;
-    }
+        }
+
+        &__menu2{
+            max-height: 340px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
 }
 
 .menu{
@@ -47,9 +54,10 @@
             }
 
             &__heart{
+                display: block;
                 position: absolute;
-                height: 30px;
-                left: 24rem;
+                height: 25px;
+                left: 24.5rem;
             }
         }
 
