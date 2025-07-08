@@ -32,7 +32,7 @@
   display: block;
 }
 .hero__menu2 {
-  max-height: 340px;
+  max-height: 250px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -214,6 +214,49 @@ p {
   font-weight: 500;
 }
 
+.loader {
+  background-color: #bc95e9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: hide 3s forwards;
+  z-index: 9;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+  }
+  99% {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+  }
+  100% {
+    opacity: 1;
+    visibility: hidden;
+    z-index: -1;
+  }
+}
+.spiner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side at 50% 40%, #bc95e9 94%, whitesmoke);
+  transform-origin: 50% 40%;
+  animation: spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 .bar {
   display: flex;
   flex-wrap: nowrap;
@@ -322,15 +365,11 @@ p {
 .restaurant .restaurant__card__menu__container__photo {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 80%;
-     object-position: center 80%;
-}
-.restaurant .restaurant__card__menu__container__photo.menu2 {
-  -o-object-position: center 90%;
-     object-position: center 90%;
+  -o-object-position: center 70%;
+     object-position: center 70%;
 }
 .restaurant .restaurant__card__menu__container__label {
   position: absolute;
