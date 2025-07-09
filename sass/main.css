@@ -90,7 +90,7 @@
   background-color: white;
   margin-top: 1rem;
   padding: 0.8rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
 }
 .menu__card__box__container span {
   display: flex;
@@ -127,7 +127,7 @@ button {
   color: white;
   font-size: 1.125rem;
   background: linear-gradient(175deg, #FF79DA -30%, #9356DC 100%);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
   border: none;
   border-radius: 2.5rem;
   cursor: pointer;
@@ -313,7 +313,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
   border-radius: 1rem;
   margin: 1rem 1rem 1rem 0.5rem;
   padding: 1.5rem 0 1.5rem 3rem;
@@ -379,6 +379,7 @@ p {
   top: 1rem;
   right: 1rem;
   background-color: #99E2D0;
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
   border-radius: 0.1rem;
   padding: 0.5rem 1rem;
   z-index: 1;
