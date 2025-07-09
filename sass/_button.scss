@@ -19,9 +19,16 @@ button{
 .btn{
     color: white;
     font-size: $fs-medium;
-    background: linear-gradient(175deg, $color-secondary, $color-primary);
+    background: linear-gradient(175deg, $color-secondary -30%, $color-primary 100%);
     box-shadow: $boxshadowdefault;
     border: none;
     border-radius: 2.5rem;
     cursor: pointer;
+
+    &:hover{
+        background: linear-gradient(
+            170deg,
+            lighten($color-secondary, 6) -30%,
+            lighten($color-primary, 5) 100%);
+    }
 }

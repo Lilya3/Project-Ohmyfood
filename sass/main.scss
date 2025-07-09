@@ -60,6 +60,7 @@ p{
     font-weight: $fw-semibold;
 }
 
+//==========================Animation Loader================================//
 .loader{
     background-color: lighten($color-primary, 15);
     width: 100%;
@@ -104,6 +105,7 @@ p{
   100% {transform: rotate(1turn)}
 }
 
+//==========================================================//
 .bar{
     display: flex;
     flex-wrap:nowrap;
