@@ -32,3 +32,55 @@ button{
             lighten($color-primary, 5) 100%);
     }
 }
+//========================Heart & Animation========================//
+
+
+.heart-toggle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.heart-toggle input{
+    display: none;
+}
+
+.heart {
+  display: block;
+  height: 90%;
+  background-image: url("/assets/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  
+    &:checked{
+        transform: scale(0.15);
+
+    }
+}
+
+
+.heart::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-image: url("/assets/heart_fill.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: height 0.4s ease;
+}
+
+.heart-toggle input:checked + .heart::after {
+  height: 100%;
+}
+
+
+
+//===============================================================//

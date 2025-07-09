@@ -45,17 +45,19 @@
         &__dishe{
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
+            align-items: flex-start;
+            justify-content: space-between;
             position: relative;
             right: 0.5rem;
             
             h1{
-                margin: 0;
+                margin: 0.5rem;
             }
 
-            &__heart{
-                display: block;                
+            .heart{
+                top: 1rem;
+                right: 1rem;
+
             }
         }
 
