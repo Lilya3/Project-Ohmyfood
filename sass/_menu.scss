@@ -76,7 +76,7 @@
             &__box{
             
                 &__container{
-                    display: flex;
+                    display: inline-flex;
                     flex-direction: row;
                     flex-wrap: nowrap;
                     justify-content: space-between;
@@ -84,7 +84,6 @@
                     border-radius: 1rem;
                     background-color: white;
                     margin-top: 1rem;
-                    padding: 0.8rem;
                     box-shadow: $boxshadowdefault;
 
                     span{
@@ -96,15 +95,38 @@
 
                     &__content{
 
+
+                        padding: 1rem;
+
                         h3{
                             font-size: 18px;
                             font-weight: 500;
+                            padding-bottom: 0.1rem;
                         }
                         
                         p{
                             font-weight: 250;
                             font-size: 15.04px;
                         }
+
+                    }
+
+                    .checkmark{
+                        padding: 1.8rem 1.25rem;
+                        border-top-right-radius: 1rem ;
+                        border-bottom-right-radius: 1rem ;
+                        background-color: $color-tertiary;
+                    }
+
+                    .fa-solid{
+                        color: $color-tertiary;
+                        font-size: 1rem;
+                    }
+
+                    i::before{
+                        border-radius: 1rem;
+                        background-color: white;
+                        padding: 0.2rem;
                     }
 
                 }
