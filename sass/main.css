@@ -82,7 +82,7 @@
   font-weight: 300;
 }
 .menu__card__box__container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -91,12 +91,14 @@
   background-color: white;
   margin-top: 1rem;
   box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
+  overflow: hidden;
 }
 .menu__card__box__container span {
   display: flex;
   font-weight: 800;
   color: #353535;
   align-items: flex-end;
+  padding-bottom: 0.5rem;
 }
 .menu__card__box__container__content {
   padding: 1rem;
@@ -109,6 +111,13 @@
 .menu__card__box__container__content p {
   font-weight: 250;
   font-size: 15.04px;
+}
+.menu__card__box__container__checkmark {
+  margin-right: -65px;
+}
+.menu__card__box__container .menu__card__box__container__checkmark:hover {
+  transform: translateX(-65px);
+  transition: transform 1s ease-in;
 }
 .menu__card__box__container .checkmark {
   padding: 1.8rem 1.25rem;
@@ -137,52 +146,52 @@
 }
 .menu .animated-step {
   opacity: 0;
-  animation: fadeInLeft 0.5s ease-out forwards;
+  animation: fadeInLeft 0.2s ease-out forwards;
 }
 .menu .step-1 {
   animation-delay: 0s;
 }
 .menu .step-2 {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .menu .step-3 {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 .menu .step-4 {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 .menu .step-5 {
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 .menu .step-6 {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 .menu .step-7 {
-  animation-delay: 3s;
+  animation-delay: 1.8s;
 }
 .menu .step-8 {
-  animation-delay: 3.5s;
+  animation-delay: 2.1s;
 }
 .menu .step-9 {
-  animation-delay: 4s;
+  animation-delay: 2.4s;
 }
 .menu .step-10 {
-  animation-delay: 4.5s;
+  animation-delay: 2.7s;
 }
 .menu .step-11 {
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 .menu .step-12 {
-  animation-delay: 5.5s;
+  animation-delay: 3.3s;
 }
 .menu .step-13 {
-  animation-delay: 6s;
+  animation-delay: 3.6s;
 }
 .menu .step-14 {
-  animation-delay: 6.5s;
+  animation-delay: 3.9s;
 }
 .menu .step-15 {
-  animation-delay: 7s;
+  animation-delay: 4.2s;
 }
 
 button {

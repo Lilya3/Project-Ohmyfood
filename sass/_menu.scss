@@ -57,7 +57,6 @@
             .heart{
                 top: 1rem;
                 right: 1rem;
-
             }
         }
 
@@ -66,6 +65,7 @@
             &__title{
                 border-bottom: solid 3px $color-tertiary;
                 width: 40px;
+                
                     h4{
                         padding: 1rem 0 0.3rem 0;
                         font-size: 1rem;
@@ -76,7 +76,7 @@
             &__box{
             
                 &__container{
-                    display: inline-flex;
+                    display: flex;
                     flex-direction: row;
                     flex-wrap: nowrap;
                     justify-content: space-between;
@@ -85,16 +85,19 @@
                     background-color: white;
                     margin-top: 1rem;
                     box-shadow: $boxshadowdefault;
+                    overflow: hidden;
+
+                    
 
                     span{
                         display: flex;
                         font-weight: 800;
                         color: #353535;
                         align-items: flex-end;
+                        padding-bottom: 0.5rem;
                     }
 
                     &__content{
-
 
                         padding: 1rem;
 
@@ -111,6 +114,15 @@
 
                     }
 
+                    
+                    &__checkmark{
+                        margin-right: -65px;
+                    }
+
+                    .menu__card__box__container__checkmark:hover{
+                        transform: translateX(-65px);
+                        transition: transform 1s ease-in ;
+                    }
                     .checkmark{
                         padding: 1.8rem 1.25rem;
                         border-top-right-radius: 1rem ;
@@ -129,6 +141,8 @@
                         padding: 0.2rem;
                     }
 
+                    
+
                 }
             }
         }
@@ -146,12 +160,12 @@
 
   .animated-step {
     opacity: 0;
-    animation: fadeInLeft 0.5s ease-out forwards;
+    animation: fadeInLeft 0.2s ease-out forwards;
 }
 
     @for $i from 1 through 15 {
         .step-#{$i} {
-        animation-delay: #{($i - 1) * 0.5}s;
+        animation-delay: #{($i - 1) * 0.3}s;
     }
 }
     }
