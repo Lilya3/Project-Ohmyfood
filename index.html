@@ -32,10 +32,17 @@
         </header>
 
         <main>
-            <button class="bar">
-                <img class="bar__location" src="assets/Pin.svg" alt="localisation restaurants">
-                <p>Paris, Belleville</p>
-            </button>
+            <div class="frame">
+                <form class="frame__searchbar" method="get" action="#">
+                <div class="frame__searchbar__logo">
+                    <img src="assets/Pin.svg" alt="localisation restaurants">
+                </div>
+                <div class="frame__searchbar__text">
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" placeholder="Paris, Belleville" autocomplete="off">
+                </div>
+                </form>
+            </div>
 
              <section class="presentation">
                 <h2>Réservez le menu qui<br>

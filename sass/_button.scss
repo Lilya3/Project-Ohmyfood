@@ -25,6 +25,10 @@ button{
     border-radius: 2.5rem;
     cursor: pointer;
 
+    p{
+      cursor: pointer;
+    }
+
     &:hover{
         background: linear-gradient(
             170deg,
