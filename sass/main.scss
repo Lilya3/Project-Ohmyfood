@@ -65,6 +65,10 @@ p{
     cursor: default;
 }
 
+a p{
+    cursor: pointer;
+}
+
 //==========================Animation Loader================================//
 .loader{
     background-color: lighten($color-primary, 15);

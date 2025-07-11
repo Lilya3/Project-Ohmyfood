@@ -202,7 +202,7 @@ footer a {
   text-decoration: none;
   color: white;
   display: flex;
-  padding: 1rem 0 0 1.5rem;
+  margin: 1rem 0 0 1.5rem;
 }
 footer a img {
   padding-left: 0.5rem;
@@ -266,6 +266,10 @@ p {
   font-size: 1rem;
   font-weight: 500;
   cursor: default;
+}
+
+a p {
+  cursor: pointer;
 }
 
 .loader {
