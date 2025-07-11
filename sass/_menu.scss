@@ -110,6 +110,28 @@
                 }
             }
         }
+
+    @keyframes fadeInLeft {
+  from {
+    transform: translateX(-85px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  .animated-step {
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+    @for $i from 1 through 15 {
+        .step-#{$i} {
+        animation-delay: #{($i - 1) * 0.5}s;
+    }
+}
     }
 
 

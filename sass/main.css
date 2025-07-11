@@ -107,6 +107,65 @@
   font-weight: 250;
   font-size: 15.04px;
 }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-85px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.menu .animated-step {
+  opacity: 0;
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+.menu .step-1 {
+  animation-delay: 0s;
+}
+.menu .step-2 {
+  animation-delay: 0.5s;
+}
+.menu .step-3 {
+  animation-delay: 1s;
+}
+.menu .step-4 {
+  animation-delay: 1.5s;
+}
+.menu .step-5 {
+  animation-delay: 2s;
+}
+.menu .step-6 {
+  animation-delay: 2.5s;
+}
+.menu .step-7 {
+  animation-delay: 3s;
+}
+.menu .step-8 {
+  animation-delay: 3.5s;
+}
+.menu .step-9 {
+  animation-delay: 4s;
+}
+.menu .step-10 {
+  animation-delay: 4.5s;
+}
+.menu .step-11 {
+  animation-delay: 5s;
+}
+.menu .step-12 {
+  animation-delay: 5.5s;
+}
+.menu .step-13 {
+  animation-delay: 6s;
+}
+.menu .step-14 {
+  animation-delay: 6.5s;
+}
+.menu .step-15 {
+  animation-delay: 7s;
+}
 
 button {
   text-decoration: none;
