@@ -160,6 +160,13 @@ a p{
         }
     }
 
+@media (min-width:480px) and (max-width:1440px){
+    .frame{
+        box-shadow: unset;
+    }
+}
+
+
 //========================= Section presentation =================================//
 
 .presentation {
@@ -173,8 +180,9 @@ a p{
         z-index: 1;
         
         h2{
-            margin-bottom: 1rem;
+            margin: 1rem;
             text-align: center;
+            font-size: 2.5rem;
         }
 
         span{
@@ -185,6 +193,8 @@ a p{
             margin-bottom: 2rem;
         }
 }
+
+
 
 //========================= Functioning =================================//
 
@@ -320,5 +330,23 @@ a p{
     }               
 }
 
+@media (min-width:480px) and (max-width:1440px){
 
+    .restaurant{
+        padding: 4rem;
+
+        &__card{
+            justify-content: none;
+            flex-direction: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1.5rem;
+
+            &__menu{
+                width: 100%;
+            }
+        }
+    }   
+}
 

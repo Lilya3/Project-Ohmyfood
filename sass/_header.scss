@@ -20,7 +20,11 @@
             position: relative;
             padding: 1.5rem;
         }
-
-        
     }
 }
+
+@media (min-width:480px) and (max-width:1440px){
+        .appBar__name{
+            box-shadow: unset;
+        }
+    }
