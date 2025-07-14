@@ -150,7 +150,7 @@
 
             &:hover &__right {
                 transform: translateX(-60px);           //Solution anim
-                transition: transform 1s ease-in-out ;
+                transition: transform 0.5s ease-in-out ;
             }
 
             &:hover &__checkmark{                       //Solution anim
