@@ -151,6 +151,10 @@
 .menu__card__box__container:hover .menu__card__box__container__checkmark {
   transform: translateX(0);
 }
+.menu .animated-step {
+  opacity: 0;
+  animation: fadeInLeft 0.2s ease-out forwards;
+}
 @keyframes fadeInLeft {
   from {
     transform: translateX(-85px);
@@ -161,54 +165,50 @@
     opacity: 1;
   }
 }
-.menu__card__box__container .animated-step {
-  opacity: 0;
-  animation: fadeInLeft 0.2s ease-out forwards;
-}
-.menu__card__box__container .step-1 {
+.menu .step-1 {
   animation-delay: 0s;
 }
-.menu__card__box__container .step-2 {
-  animation-delay: 0.3s;
+.menu .step-2 {
+  animation-delay: 0.25s;
 }
-.menu__card__box__container .step-3 {
-  animation-delay: 0.6s;
+.menu .step-3 {
+  animation-delay: 0.5s;
 }
-.menu__card__box__container .step-4 {
-  animation-delay: 0.9s;
+.menu .step-4 {
+  animation-delay: 0.75s;
 }
-.menu__card__box__container .step-5 {
-  animation-delay: 1.2s;
+.menu .step-5 {
+  animation-delay: 1s;
 }
-.menu__card__box__container .step-6 {
+.menu .step-6 {
+  animation-delay: 1.25s;
+}
+.menu .step-7 {
   animation-delay: 1.5s;
 }
-.menu__card__box__container .step-7 {
-  animation-delay: 1.8s;
+.menu .step-8 {
+  animation-delay: 1.75s;
 }
-.menu__card__box__container .step-8 {
-  animation-delay: 2.1s;
+.menu .step-9 {
+  animation-delay: 2s;
 }
-.menu__card__box__container .step-9 {
-  animation-delay: 2.4s;
+.menu .step-10 {
+  animation-delay: 2.25s;
 }
-.menu__card__box__container .step-10 {
-  animation-delay: 2.7s;
+.menu .step-11 {
+  animation-delay: 2.5s;
 }
-.menu__card__box__container .step-11 {
+.menu .step-12 {
+  animation-delay: 2.75s;
+}
+.menu .step-13 {
   animation-delay: 3s;
 }
-.menu__card__box__container .step-12 {
-  animation-delay: 3.3s;
+.menu .step-14 {
+  animation-delay: 3.25s;
 }
-.menu__card__box__container .step-13 {
-  animation-delay: 3.6s;
-}
-.menu__card__box__container .step-14 {
-  animation-delay: 3.9s;
-}
-.menu__card__box__container .step-15 {
-  animation-delay: 4.2s;
+.menu .step-15 {
+  animation-delay: 3.5s;
 }
 
 button {
