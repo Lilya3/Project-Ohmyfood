@@ -132,7 +132,7 @@
   padding: 1.8rem 1.25rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  transform: translateX(100%);
+  transform: translateX(102%);
   transition: transform 0.3s ease-in-out;
 }
 .menu__card__box__container__right .fa-solid {
@@ -146,7 +146,7 @@
 }
 .menu__card__box__container:hover .menu__card__box__container__right {
   transform: translateX(-60px);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .menu__card__box__container:hover .menu__card__box__container__checkmark {
   transform: translateX(0);
