@@ -16,7 +16,7 @@
   padding: 1.5rem;
 }
 
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .appBar__name {
     box-shadow: unset;
   }
@@ -318,6 +318,13 @@ footer a img {
   transform: scale(1.5);
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
 * {
   margin: 0;
 }
@@ -469,7 +476,7 @@ a p {
   font-weight: 450;
 }
 
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .frame {
     box-shadow: unset;
   }
@@ -537,6 +544,17 @@ a p {
   gap: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .functioning__card {
+    display: flex;
+    flex-direction: row;
+  }
+  .functioning__card__container__number {
+    position: relative;
+    margin-right: 1rem;
+    margin-left: -3.5rem;
+  }
+}
 .restaurant {
   background-color: whitesmoke;
   padding-top: 4rem;
@@ -610,19 +628,23 @@ a p {
   font-weight: 300;
 }
 
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .restaurant {
     padding: 4rem;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .restaurant__card {
-    justify-content: none;
-    flex-direction: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
   }
-  .restaurant__card__menu {
+  .restaurant .restaurant__card__menu {
+    margin-bottom: 0;
     width: 100%;
+    max-width: 450px;
   }
 }/*# sourceMappingURL=main.css.map */
