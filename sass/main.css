@@ -321,8 +321,27 @@ footer a img {
 @media (min-width: 768px) {
   footer {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    padding-top: 2rem;
+  }
+  footer .logo {
+    transform: scale(0.5);
+    padding: 1.5rem 3rem 1.8rem 3rem;
+  }
+  footer nav {
+    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
+  }
+  footer nav a {
+    white-space: nowrap;
+    font-size: 0.875rem;
+    margin: 2rem 0 0 1rem;
+  }
+  footer nav a i {
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
   }
 }
 * {

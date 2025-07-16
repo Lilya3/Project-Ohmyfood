@@ -36,7 +36,30 @@ footer{
 @media (min-width:768px){
     footer{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
+        justify-content:stretch;
+        padding-top: 2rem;
+
+        .logo{
+            transform: scale(0.5);
+            padding: 1.5rem 3rem 1.8rem 3rem;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            a{
+                white-space: nowrap;
+                font-size: $fs-small;
+                margin: 2rem 0 0 1rem; 
+
+                i{
+                    padding-right: 0.5rem;
+                    font-size: $fs-small;
+                }
+            }
+        }
     }
 }
