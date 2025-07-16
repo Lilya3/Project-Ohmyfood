@@ -49,6 +49,7 @@ h1{
 h2{
     font-size: $fs-page-title;
     margin-left: 1.3rem;
+    padding-bottom: 1rem;
     cursor: default;
 }
 
@@ -212,7 +213,7 @@ a p{
 
         &__card{
             &__container{
-                background-color:rgba(whitesmoke, $opacity-medium);
+                background-color:rgba(whitesmoke, $opacity-hard);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -245,17 +246,88 @@ a p{
 }
 
 @media (min-width:768px){
-    .functioning__card{
-        display: flex;
-        flex-direction: row;
+    .functioning{
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        padding-left: 0;
+        margin-left:2rem;
+        margin-right: 1rem;
+
+        h2{
+            margin-left:1.3rem;
+        }
+    
+        &__card{
+            display: flex;
+            justify-content: space-between;
+            transform: scale(0.85);
+            gap: 1.5rem;
+                &__container{
+                    display: inline-flex;
+                    padding: 1.2rem 1.5rem 1.2rem 0;
+                    margin:0;
+                    width: 100%;
+
+                    &__number{
+                        position: relative;
+                        margin-right: 1rem;
+                        margin-left: -0.5rem;
+                        font-size: 0.8rem;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                    }
+
+                &__content{
+                    align-items: center;
+                    gap: 0.8rem;
+
+                    i{
+                        font-size: 1rem;
+                    }
+
+                    p{
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        margin-right: 1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
     }
+}
+
+
+
+@media (min-width:1024px) and (max-width:1250px){
+
+    .functioning{
+        max-width: 110%;
+        padding: 3rem;
+        margin-left:auto;
+        margin-right: auto;
+
+        h2{
+            padding-left:1.3rem;
+        }
+    
+        &__card{
+            display: flex;
+            justify-content: center;
+
+                &__container{
+                padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+            }
+        }
 
     .functioning__card__container__number{
             position:relative;
             margin-right: 1rem;
-            margin-left: -3.5rem;
+            margin-left: -3rem;
         }
+    }
 }
+
 
 
 //========================= Section Restaurant =================================//
@@ -270,99 +342,136 @@ a p{
         flex-direction: column;
         align-items: center;
         padding: 1rem 0 5rem 0;
-        }
+        
 
-.restaurant__card__menu{
-    display: flex;
-    flex-direction: column;
-    border: none;
-    border-radius: 1rem;
-    background-color: white;
-    width: 90%;
-    height: 250px;
-    margin-bottom: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 1rem;
+            background-color: white;
+            width: 90%;
+            height: 250px;
+            margin-bottom: 1rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-    &__container{
-        position: relative;
-        display: block;
-        overflow: hidden;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
+            &__container{
+                position: relative;
+                display: block;
+                overflow: hidden;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
 
-        &__photo {
-            display: block;
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: center 70%;
-        }
-
-        &__label{
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background-color: $color-tertiary;
-            box-shadow: $boxshadowdefault;
-            border-radius: 0.1rem;
-            padding: 0.5rem 1rem;
-            z-index: 1;
-            
-            p{
-                font-size: $fs-small;
-                color: #008766;
-                margin: 0;
-            }
-        }
-    }
-
-    &__content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0.1rem 0 0.1rem 0;
-
-            &__heart, .heart{
-                top: 1rem;
-                right: 1.5rem;
+                &__photo {
+                    display: block;
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: center 70%;
                 }
 
-        h4{
-            padding: 0.5em 0 0.1rem 1rem;
-            font-size: $fs-medium;
-            font-weight: $fw-bold;
-            }
+                &__label{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    background-color: $color-tertiary;
+                    box-shadow: $boxshadowdefault;
+                    border-radius: 0.1rem;
+                    padding: 0.5rem 1rem;
+                    z-index: 1;
+            
+                        p{
+                        font-size: $fs-small;
+                        color: #008766;
+                        margin: 0;
+                        }
+                    }
+                }
+            
+            &__content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0.1rem 0 0.1rem 0;
 
-        p{
-            font-size: 1.063rem;
-            padding: 0 0 1rem 1rem;
-            font-weight:$fw-light;
-            }
-        }           
-    }               
+                &__heart, .heart{
+                    top: 1rem;
+                    right: 1.5rem;
+                }
+
+                h4{
+                    padding: 0.5em 0 0.1rem 1rem;
+                    font-size: $fs-medium;
+                    font-weight: $fw-bold;
+                }
+
+                p{
+                    font-size: 1.063rem;
+                    padding: 0 0 1rem 1rem;
+                    font-weight:$fw-light;
+                }
+            } 
+        }
+    }
 }
+
+              
+
 
 @media (min-width:768px){
 
     .restaurant{
-        padding: 4rem;
-        max-width: 1250px;
-        margin-left:auto;
-        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+
+        &__card{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding-top: 0.5rem;
+            gap: 2rem;
+        
+
+            &__menu{
+                display: flex;
+                margin-bottom: 0;
+                height: 200px;
+                max-width: 45%;
+
+                &__content{
+                    padding: 0;
+
+                    p{
+                        padding-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width:1024px){
+    .restaurant{
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+
 
         &__card{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
+            justify-content:space-evenly;
+            gap: 2.5rem;
         }
 
         .restaurant__card__menu{
                 margin-bottom: 0;
                 width: 100%;
-                max-width: 450px;
+                max-width: 400px;
+                height: 220px;
         }
     }
-}
 
+}
