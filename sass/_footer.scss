@@ -25,10 +25,8 @@ footer{
         display: flex;
         margin: 1rem 0 0 1.5rem;
 
-        img{
-            padding-left: 0.5rem;
-            padding-right: 1rem;
-            transform: scale(1.5);
+        i{
+            padding-right: 0.5rem;
         }
     }
 }
@@ -38,28 +36,42 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content:stretch;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
 
         .logo{
             transform: scale(0.5);
-            padding: 1.5rem 3rem 1.8rem 3rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
         }
 
-        nav{
+        .contact{
             display: flex;
             flex-direction: row;
             align-items: center;
-
+            font-size: $fs-small;
+            padding-bottom: 0.5rem;
+            
             a{
-                white-space: nowrap;
-                font-size: $fs-small;
-                margin: 2rem 0 0 1rem; 
+                white-space: nowrap; 
+                margin: 0;
+            
 
                 i{
                     padding-right: 0.5rem;
+                    padding-left: 0.5rem;
                     font-size: $fs-small;
                 }
             }
+
         }
+            
+            .contact > .informations{
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .contact > .joining{
+                margin-right: 1.5rem;
+            }
     }
 }

@@ -215,11 +215,12 @@ a p{
                 background-color:rgba(whitesmoke, $opacity-hard);
                 display: flex;
                 flex-direction: row;
+                justify-content:center;
                 align-items: center;
                 box-shadow: $boxshadowdefault;
                 border-radius: 1rem;
                 margin:1rem 1rem 1rem 0.5rem;
-                padding: 1.5rem 0 1.5rem 3rem;
+                padding: 1.5rem 0 1.5rem 0rem;
                 
                 &__number{
                     position: absolute;
@@ -248,19 +249,21 @@ a p{
     .functioning{
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
+        //flex-direction: row;
+        //justify-content: flex-start;
+        //flex-wrap: wrap;
+        max-width: 1080px;
 
         h2{
-            margin-left:1.5rem;
+            margin-left:7%;
         }
     
         &__card{
             display: flex;
-            position: relative;
-            transform: scale(0.82);
-            width: 100%;
-            left: -45px;
-            z-index: 1;
-            gap: 2.2rem;
+            flex-direction: row;
+            justify-content: flex-start;
+            transform: scale(0.75);
+            gap: 3rem;
 
                 &__container{
                     flex: 1 1 200px;
@@ -298,6 +301,8 @@ a p{
     }
 }
 
+@media (min-width:900px){
+}
 
 //========================= Section Restaurant =================================//
 
@@ -396,36 +401,40 @@ a p{
         &__list{
 
             h2{
-                margin-left: 1.5rem;
+                margin-left:6.5%;
             }
 
             &__card{
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content:center;
+                justify-content:space-evenly;
                 padding-top: 0.5rem;
-                gap: 2rem;
+                gap: 1rem;
         
 
                 &__menu{
                     display: flex;
-                    margin-bottom: 0;
                     height: 200px;
-                    max-width: 45%;
+                    max-width: 40%;
+                    margin-bottom: 2rem;
+                    &__container{
+                        &__content{
+                            padding: 0;
 
-                    &__content{
-                        padding: 0;
+                                p{
+                                padding-bottom: 0.5rem;
+                            }
+                        }
 
-                        p{
-                            padding-bottom: 0.5rem;
+                        &__label{
+                            top: 0.5rem;
                         }
                     }
                 }
-            }
-        }  
+            }  
+        }
     }
 }
-
 
 @media (min-width: 768px) {
   .restaurant {
