@@ -62,7 +62,6 @@
 .menu__dishe {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
   position: relative;
   right: 0.5rem;
@@ -134,7 +133,8 @@
 }
 .menu__card__box__container__right .checkmark {
   background: #99E2D0;
-  padding: 1.8rem 1.25rem;
+  padding: 1.9rem 1.25rem;
+  overflow: clip;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   transform: translateX(102%);
@@ -226,8 +226,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .menu__dishe {
+    right: -1rem;
+    gap: 2rem;
+  }
+  .menu__dishe h1 {
+    margin: 0;
+  }
+  .menu__dishe label .heart {
+    display: flex;
+    top: 0.6rem;
+  }
+  .menu__card {
+    width: 60%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .menu__card__box__container h3 {
+    white-space: nowrap;
   }
 }
 button {

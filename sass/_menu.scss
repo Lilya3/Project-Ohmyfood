@@ -45,7 +45,6 @@
         &__dishe{
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
             justify-content: space-between;
             position: relative;
             right: 0.5rem;
@@ -129,7 +128,8 @@
 
                     .checkmark{
                         background: $color-tertiary;
-                        padding: 1.8rem 1.25rem;
+                        padding: 1.9rem 1.25rem;
+                        overflow: clip;
                         border-top-right-radius: 1rem ;
                         border-bottom-right-radius: 1rem ;
                         transform: translateX(102%);            //solution anim
@@ -196,7 +196,37 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 8rem;
-        margin-right: 8rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+        &__dishe{
+            right: -1rem;
+            gap: 2rem;
+
+            h1{
+                margin: 0;
+            }
+
+            label{
+
+                .heart{
+                    display: flex;
+                    top: 0.6rem;
+                }
+            }
+        }
+        
+        &__card{
+            width: 60%;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            &__box{
+                &__container{
+                    h3{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
     }
 }
