@@ -95,6 +95,7 @@
                                 font-weight: 500;
                                 margin: 0;
                                 padding-bottom: 0.1rem;
+                                white-space: nowrap;
                             }
                         
                             p{
@@ -220,13 +221,6 @@
             width: 60%;
             margin-left: 4rem;
             margin-right: 4rem;
-            &__box{
-                &__container{
-                    h3{
-                        white-space: nowrap;
-                    }
-                }
-            }
         }
     }
 }

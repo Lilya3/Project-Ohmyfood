@@ -182,7 +182,6 @@ a p{
         h2{
             margin: 1rem;
             text-align: center;
-            font-size: 2.5rem;
         }
 
         span{
@@ -194,6 +193,11 @@ a p{
         }
 }
 
+@media (min-width:768px){
+    h2{
+        font-size: 2.5rem;
+    }
+}
 
 
 //========================= Functioning =================================//
@@ -301,8 +305,6 @@ a p{
     }
 }
 
-@media (min-width:900px){
-}
 
 //========================= Section Restaurant =================================//
 
