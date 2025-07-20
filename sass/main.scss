@@ -242,9 +242,10 @@ a p{
                     flex-direction: row;
                     background-color:rgba(whitesmoke, $opacity-hard);
                     box-shadow: $boxshadowdefault;
-                    border-radius: 1rem;
+                    width: 80%;
+                    border-radius: 1.5rem;
                     margin:1rem 1rem 1rem -0.8rem;
-                    padding: 1.5rem 2rem;
+                    padding: 2rem 2rem;
                     gap: 1.5rem;
                 }
         }
@@ -274,7 +275,6 @@ a p{
                 &__content{
                     padding: 1.5rem 0.5rem;
                     gap: 1rem;
-                    width: 80%;
                     justify-content:flex-start;
 
                     i{
@@ -282,6 +282,8 @@ a p{
                     }
 
                     p{
+                        display: flex;
+                        align-items: end;
                         white-space: nowrap;
                         margin-right: 1rem;
                         font-size: $fs-small;
