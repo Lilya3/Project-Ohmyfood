@@ -10,19 +10,17 @@
     width: 100%;
     overflow: hidden;
 
-        &__menu{
+        &__photo{
             width: 100%;
-            height: 100%;
-            transform: scale(1.1);
             object-fit: cover;
             display: block;
         }
 
-        &__menu2{
-            max-height: 250px;
+        &__photo2{
             width: 100%;
+            max-height: 300px;
             object-fit: cover;
-            display: block;
+            object-position: center 50%;
         }
 }
 
@@ -32,8 +30,8 @@
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     background-color: whitesmoke;
-    margin-top: -60px;
-    padding: 2rem 1rem;
+    margin-top: -40px;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
 
@@ -47,6 +45,7 @@
             flex-direction: row;
             justify-content: space-between;
             position: relative;
+            margin-top: 0.5rem;
             right: 0.5rem;
             
             h1{
@@ -188,7 +187,7 @@
 @media (min-width:768px){
 
     .hero{
-        &__menu{
+        &__photo{
             height: 300px;
             object-position: center 65%;
         }
