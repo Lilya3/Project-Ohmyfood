@@ -742,9 +742,26 @@ a p {
   }
   .restaurant__list__card__menu {
     display: flex;
-    height: 200px;
+    height: 225px;
     max-width: 40%;
     margin-bottom: 2rem;
+  }
+  .restaurant__list__card__menu__container__photo {
+    display: block;
+    width: 100%;
+    height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center 80%;
+       object-position: center 80%;
+  }
+  .restaurant__list__card__menu__container__photo2 {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center 64%;
+       object-position: center 64%;
   }
   .restaurant__list__card__menu__container__content {
     padding: 0;
