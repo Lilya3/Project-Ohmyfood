@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+
+.appBar{
+    &__name{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        box-shadow: (0px 2px 5px rgba(0, 0, 0, 0.4));
+
+        &__goback{
+            position: absolute;
+            left: 20px;
+            top: 23px;
+            height: 35px;
+        }
+
+        &__logo{
+            position: relative;
+            padding: 1.5rem;
+        }
+    }
+}
+
+@media (min-width:768px){
+        .appBar__name{
+            box-shadow: unset;
+        }
+    }

@@ -1,0 +1,77 @@
+@use 'variables' as *;
+
+
+
+footer{
+    background-color: #353535;
+    .logo{
+        margin: -0.2rem;
+        padding-top:2rem;
+        filter: invert(1);
+        transform: scale(0.7);
+    }
+
+    nav{
+        padding-bottom: 2rem;
+
+        a p{
+            font-weight: $fw-regular;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        margin: 1rem 0 0 1.5rem;
+
+        i{
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+@media (min-width:768px){
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:stretch;
+        padding-top: 2.5rem;
+
+        .logo{
+            transform: scale(0.5);
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: $fs-small;
+            padding-bottom: 0.5rem;
+            
+            a{
+                white-space: nowrap; 
+                margin: 0;
+            
+
+                i{
+                    padding-right: 0.5rem;
+                    padding-left: 0.5rem;
+                    font-size: $fs-small;
+                }
+            }
+
+        }
+            
+            .contact > .informations{
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .contact > .joining{
+                margin-right: 1.5rem;
+            }
+    }
+}

@@ -1,0 +1,231 @@
+@use 'variables' as *;
+
+
+
+
+.hero{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+        &__photo{
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &__photo2{
+            width: 100%;
+            object-fit: cover;
+            max-height: 300px;
+            object-position: center 50%;
+        }
+}
+
+.menu{
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background-color: whitesmoke;
+    margin-top: -40px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+        .btn-position{
+            text-align: center;
+            padding: 3rem 0 1rem 0;
+        }
+
+        &__dishe{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 0.5rem;
+            right: 0.5rem;
+            
+            h1{
+                margin: 0.5rem;
+            }
+
+            .heart{
+                top: 1rem;
+                right: 1rem;
+            }
+        }
+
+        &__card{
+            padding-top: 1rem;
+            &__title{
+                border-bottom: solid 3px $color-tertiary;
+                width: 40px;
+                
+                    h4{
+                        padding: 1rem 0 0.3rem 0;
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+                
+            &__box{
+            
+                &__container{
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    background-color: white;
+                    border-radius: 1rem;
+                    margin-top: 1rem;
+                    gap: 1rem;
+                    box-shadow: $boxshadowdefault;
+
+                    &__content{
+                        flex: 1 1 auto;
+                        min-width: 0;
+                        padding: 1rem;
+                        align-content: center;
+
+                            h3{
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin: 0;
+                                padding-bottom: 0.1rem;
+                                white-space: nowrap;
+                            }
+                        
+                            p{
+                                font-weight: 250;
+                                font-size: 15px;
+                                margin: 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+
+                    &__right {
+                        display: flex;
+                        align-items:flex-end;
+
+
+                        .price {
+                            white-space: nowrap;
+                            font-weight: bold;
+                            color: #353535;
+                            margin-bottom: 0.5rem;
+                            position: relative;
+                            left: 2.9rem ;
+                            bottom: 0.5rem;
+                        }
+
+                        &__checkmark{
+                            background-color: $color-tertiary;
+                        }
+
+                    .checkmark{
+                        background: $color-tertiary;
+                        padding: 1.9rem 1.25rem;
+                        overflow: clip;
+                        border-top-right-radius: 1rem ;
+                        border-bottom-right-radius: 1rem ;
+                        transform: translateX(102%);            //solution anim
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    .fa-solid{
+                        color: $color-tertiary;
+                        font-size: 1rem;
+                    }
+
+                    i::before{
+                        border-radius: 1rem;
+                        background-color: white;
+                        padding: 0.2rem;
+                        }
+                }
+        //Animation bar
+            &:hover &__right {
+                transform: translateX(-60px);           //Solution anim
+                transition: transform 0.5s ease-in-out ;
+            }
+
+            &:hover &__checkmark{                       //Solution anim
+                transform: translateX(0);
+            }
+
+            }
+        }
+    }
+// Animations menu bar
+    .animated-step {
+        opacity: 0;
+        animation: fadeInLeft 0.2s ease-out forwards;
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            transform: translateX(-85px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @for $i from 1 through 15 {
+        .step-#{$i} {
+            animation-delay: #{($i - 1) * 0.25}s;
+            }
+    }
+}
+
+@media (min-width:768px){
+
+    .hero{
+
+        &__photo{
+            height: 350px;
+            object-position: center 55%;
+        }
+
+        &__photo2{
+            object-position: center 60%;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 8rem;
+        margin-right: 8rem;
+
+        &__dishe{
+            padding-top: 2rem;
+            right: -1rem;
+            gap: 2rem;
+
+            h1{
+                margin: 0;
+            }
+
+            label{
+
+                .heart{
+                    display: flex;
+                    top: 0.6rem;
+                }
+            }
+        }
+        
+        &__card{
+            width: 60%;
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+    }
+}
