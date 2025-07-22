@@ -273,7 +273,6 @@ button {
   font-size: 1.125rem;
   background: linear-gradient(175deg, #FF79DA -30%, #9356DC 100%);
   box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.25);
-  border: none;
   border-radius: 2.5rem;
   cursor: pointer;
 }
@@ -287,7 +286,6 @@ button {
 .heart-toggle {
   position: relative;
   display: inline-block;
-  cursor: pointer;
   width: 25px;
   height: 25px;
 }
@@ -305,9 +303,6 @@ button {
   position: relative;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
-}
-.heart:checked {
-  transform: scale(0.15);
 }
 
 .heart::after {
@@ -344,9 +339,9 @@ footer nav a p {
   font-weight: 400;
 }
 footer a {
+  display: flex;
   text-decoration: none;
   color: white;
-  display: flex;
   margin: 1rem 0 0 1.5rem;
 }
 footer a i {
@@ -407,6 +402,7 @@ footer a i {
 body {
   font-family: "roboto";
   font-style: normal;
+  font-size: 1rem;
   font-weight: 450;
   min-width: 360px;
 }
@@ -419,11 +415,7 @@ section {
   padding-top: 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
+h1, h2, h3, h4, p,
 span {
   cursor: default;
 }
@@ -441,7 +433,6 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -525,14 +516,12 @@ a p {
 }
 .frame__searchbar__text input[type=text]::-moz-placeholder {
   color: black;
-  font-family: "roboto";
   font-size: 1rem;
   opacity: 1;
   font-weight: 450;
 }
 .frame__searchbar__text input[type=text]::placeholder {
   color: black;
-  font-family: "roboto";
   font-size: 1rem;
   opacity: 1;
   font-weight: 450;
@@ -595,7 +584,6 @@ a p {
   background-color: #9356DC;
   color: whitesmoke;
   border-radius: 50%;
-  font-size: 1rem;
   cursor: default;
   height: 1.8rem;
   width: 1.8rem;
@@ -680,8 +668,6 @@ a p {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 110%;
-     object-position: center 110%;
 }
 .restaurant__list__card__menu__container__photo2 {
   width: 100%;
@@ -702,7 +688,6 @@ a p {
   z-index: 1;
 }
 .restaurant__list__card__menu__container__label p {
-  font-size: 0.875rem;
   color: #008766;
   margin: 0;
 }
@@ -757,15 +742,9 @@ a p {
        object-position: center 80%;
   }
   .restaurant__list__card__menu__container__photo2 {
-    width: 100%;
     height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
     -o-object-position: center 64%;
        object-position: center 64%;
-  }
-  .restaurant__list__card__menu__container__content {
-    padding: 0;
   }
   .restaurant__list__card__menu__container__content p {
     padding-bottom: 0.5rem;
@@ -775,11 +754,11 @@ a p {
   }
 }
 @media (min-width: 768px) {
-  .restaurant__list {
+  .functioning {
     max-width: 1080px;
     margin: 0 auto;
   }
-  .functioning {
+  .restaurant__list {
     max-width: 1080px;
     margin: 0 auto;
   }

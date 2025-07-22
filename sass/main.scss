@@ -23,6 +23,7 @@
 body{
     font-family: $font-family-body;
     font-style: normal;
+    font-size: $fs-base;
     font-weight: $fw-medium;
     min-width: 360px;
 }
@@ -35,11 +36,7 @@ section{
     padding-top: 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
+h1,h2,h3,h4,p,
 span{
     cursor: default;
 }
@@ -58,7 +55,6 @@ h2{
 }
 
 p{
-    font-size: $fs-base;
     font-weight: $fw-semibold;
 }
 
@@ -79,33 +75,35 @@ a p{
 
 
 @keyframes hide {
-  0% {
-    opacity: 1;
-    visibility: visible;
-    z-index: 9;
-  }
-  99% {
-    opacity: 1;
-    visibility: visible;
-    z-index: 9;
-  }
-  100% {
-    opacity: 1;
-    visibility: hidden;
-    z-index: -1;
-  }
+    0% {
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+    }
+    
+    99% {
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+    }
+    
+    100% {
+        opacity: 1;
+        visibility: hidden;
+        z-index: -1;
+    }
 }
 
 .spiner {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 50px);
-  border-radius: 50%;
-  background: radial-gradient(circle closest-side at 50% 40%,lighten($color-primary, 15) 94%, whitesmoke);
-  transform-origin: 50% 40%;
-  animation: spin 0.8s infinite linear;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    background: radial-gradient(circle closest-side at 50% 40%,lighten($color-primary, 15) 94%, whitesmoke);
+    transform-origin: 50% 40%;
+    animation: spin 0.8s infinite linear;
 }
 
 @keyframes spin {
@@ -148,7 +146,6 @@ a p{
 
                     &::placeholder{
                         color: black;
-                        font-family: $font-family-body;
                         font-size: $fs-base;
                         opacity: 1;
                         font-weight: $fw-medium;
@@ -169,14 +166,14 @@ a p{
 //========================= Section presentation =================================//
 
 .presentation {
-        background-color:rgba(whitesmoke, $opacity-medium);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 0 3rem 0;
-        position: relative;
-        z-index: 1;
+    background-color:rgba(whitesmoke, $opacity-medium);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    position: relative;
+    z-index: 1;
         
         h2{
             margin: 1rem;
@@ -194,7 +191,7 @@ a p{
 @media (min-width:768px){
     .presentation{
         h2{
-        font-size: 2.5rem;
+            font-size: 2.5rem;
         }
     }
 }
@@ -230,7 +227,6 @@ a p{
                     background-color: $color-primary;
                     color: whitesmoke;
                     border-radius: 50%;
-                    font-size: $fs-base;
                     cursor: default;
                     height: 1.8rem;
                     width: 1.8rem;
@@ -332,7 +328,6 @@ a p{
                         width: 100%;
                         height: 180px;
                         object-fit: cover;
-                        object-position: center 110%;
                     }
 
                     &__photo2{
@@ -353,7 +348,6 @@ a p{
                         z-index: 1;
             
                             p{
-                            font-size: $fs-small;
                             color: #008766;
                             margin: 0;
                             }
@@ -424,16 +418,13 @@ a p{
                         }
 
                         &__photo2{
-                            width: 100%;
                             height: 200px;
-                            object-fit: cover;
                             object-position: center 64%;
                         }
 
                         &__content{
-                            padding: 0;
 
-                                p{
+                            p{
                                 padding-bottom: 0.5rem;
                             }
                         }
@@ -449,15 +440,16 @@ a p{
 }
 
 @media (min-width: 768px) {
+
+  .functioning{
+    max-width: 1080px; 
+    margin: 0 auto;
+  }
+
   .restaurant {
     &__list{
         max-width: 1080px; 
         margin: 0 auto;   
     }
-  }
-
-  .functioning{
-    max-width: 1080px; 
-    margin: 0 auto;
   }
 }

@@ -21,7 +21,6 @@ button{
     font-size: $fs-medium;
     background: linear-gradient(175deg, $color-secondary -30%, $color-primary 100%);
     box-shadow: $boxshadowdefault;
-    border: none;
     border-radius: 2.5rem;
     cursor: pointer;
 
@@ -44,13 +43,12 @@ button{
 .heart-toggle {
   position: relative;
   display: inline-block;
-  cursor: pointer;
   width: 25px;
   height: 25px;
 }
 
 .heart-toggle input{
-    display: none;
+  display: none;
 }
 
 .heart {
@@ -62,10 +60,6 @@ button{
   position: relative;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
-  
-    &:checked{
-        transform: scale(0.15);
-    }
 }
 
 

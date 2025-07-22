@@ -4,6 +4,7 @@
 
 footer{
     background-color: #353535;
+
     .logo{
         margin: -0.2rem;
         padding-top:2rem;
@@ -20,9 +21,9 @@ footer{
     }
 
     a{
+        display: flex;
         text-decoration: none;
         color: white;
-        display: flex;
         margin: 1rem 0 0 1.5rem;
 
         i{
