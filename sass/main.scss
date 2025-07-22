@@ -48,13 +48,11 @@ span{
 h1{
     text-align: center;
     margin: 1rem;
-    font-size: $fs-height-title;
     font-family: $font-family-secondary;
     font-weight: $font-weight-header;
 }
 
 h2{
-    font-size: $fs-page-title;
     margin-left: 1.3rem;
     padding-bottom: 1rem;
 }
@@ -69,6 +67,7 @@ a p{
 }
 
 //==========================Animation Loader================================//
+
 .loader{
     background-color: lighten($color-primary, 15);
     width: 100%;
@@ -114,6 +113,7 @@ a p{
 }
 
 //========================= Search Bar =================================//
+
 .frame{
     display: flex;
     flex-direction: row;
@@ -185,7 +185,6 @@ a p{
 
         span{
             font-size: $fs-medium;
-            font-family: $font-family-body;
             font-weight: $fw-light;
             text-align: center;
             margin-bottom: 2rem;
@@ -204,11 +203,12 @@ a p{
 //========================= Functioning =================================//
 
 .functioning{
-    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5rem;
+    padding-bottom: 2.5rem;
+
 
     h2{
         margin: 0;
@@ -224,17 +224,17 @@ a p{
                 align-items: center;
 
                 &__number{
-                    border-radius: 50%;
-                    background-color: $color-primary;
-                    height: 1.8rem;
-                    width: 1.8rem;
-                    color: whitesmoke;
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
+                    background-color: $color-primary;
+                    color: whitesmoke;
+                    border-radius: 50%;
                     font-size: $fs-base;
-                    z-index: 5;
                     cursor: default;
+                    height: 1.8rem;
+                    width: 1.8rem;
+                    z-index: 5;
                 }
 
                 &__content{
@@ -314,7 +314,6 @@ a p{
             &__menu{
                 display: flex;
                 flex-direction: column;
-                border: none;
                 border-radius: 1rem;
                 background-color: white;
                 width: 90%;
@@ -324,7 +323,6 @@ a p{
 
                 &__container{
                     position: relative;
-                    display: block;
                     overflow: hidden;
                     border-top-left-radius: 1rem;
                     border-top-right-radius: 1rem;
