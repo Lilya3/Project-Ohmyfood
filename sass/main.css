@@ -73,17 +73,16 @@
   top: 1rem;
   right: 1rem;
 }
-.menu__card {
-  padding-top: 1rem;
-}
 .menu__card__title {
   border-bottom: solid 3px #99E2D0;
   width: 40px;
+  padding-top: 3rem;
 }
-.menu__card__title h4 {
-  padding: 1rem 0 0.3rem 0;
+.menu__card__title h2 {
+  padding-bottom: 0.3rem;
   font-size: 1rem;
   font-weight: 300;
+  margin: 0;
 }
 .menu__card__box__container {
   display: flex;
@@ -304,6 +303,7 @@ button {
   background-position: center;
   position: relative;
   transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 .heart:checked {
   transform: scale(0.15);
@@ -418,33 +418,32 @@ section {
   padding-top: 2rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  cursor: default;
+}
+
 h1 {
   text-align: center;
   margin: 1rem;
   font-size: 1.75rem;
   font-family: "shrikhand";
   font-weight: normal;
-  cursor: default;
 }
 
 h2 {
   font-size: 1.5rem;
   margin-left: 1.3rem;
   padding-bottom: 1rem;
-  cursor: default;
-}
-
-h4 {
-  font-family: "roboto";
-  font-weight: 300;
-  font-size: 1rem;
-  cursor: default;
 }
 
 p {
   font-size: 1rem;
   font-weight: 500;
-  cursor: default;
 }
 
 a p {
@@ -602,6 +601,7 @@ a p {
   justify-content: space-around;
   font-size: 1rem;
   z-index: 5;
+  cursor: default;
 }
 .functioning__card__container__content {
   display: flex;

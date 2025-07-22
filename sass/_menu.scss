@@ -59,15 +59,16 @@
         }
 
         &__card{
-            padding-top: 1rem;
             &__title{
                 border-bottom: solid 3px $color-tertiary;
                 width: 40px;
+                padding-top: 3rem;
                 
-                    h4{
-                        padding: 1rem 0 0.3rem 0;
-                        font-size: 1rem;
-                        font-weight: 300;
+                    h2{
+                        padding-bottom:0.3rem;
+                        font-size: $fs-base;
+                        font-weight: $fw-light;
+                        margin: 0;
                     }
                 }
                 
