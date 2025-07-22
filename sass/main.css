@@ -281,7 +281,7 @@ button {
   cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(170deg, #ff98e2 -30%, #a16be0 100%);
+  background: linear-gradient(170deg, rgb(255, 151.6, 226.4492537313) -30%, rgb(160.5, 107.125, 224.375) 100%);
 }
 
 .heart-toggle {
@@ -452,7 +452,7 @@ a p {
 }
 
 .loader {
-  background-color: #bc95e9;
+  background-color: rgb(187.5, 149.375, 233.125);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -484,7 +484,7 @@ a p {
   top: 50%;
   left: calc(50% - 50px);
   border-radius: 50%;
-  background: radial-gradient(circle closest-side at 50% 40%, #bc95e9 94%, whitesmoke);
+  background: radial-gradient(circle closest-side at 50% 40%, rgb(187.5, 149.375, 233.125) 94%, whitesmoke);
   transform-origin: 50% 40%;
   animation: spin 0.8s infinite linear;
 }
