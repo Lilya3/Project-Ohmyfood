@@ -276,9 +276,6 @@ button {
   border-radius: 2.5rem;
   cursor: pointer;
 }
-.btn p {
-  cursor: pointer;
-}
 .btn:hover {
   background: linear-gradient(170deg, rgb(255, 151.6, 226.4492537313) -30%, rgb(160.5, 107.125, 224.375) 100%);
 }
@@ -697,7 +694,7 @@ a p {
   justify-content: space-between;
   padding: 0.1rem 0 0.1rem 0;
 }
-.restaurant__list__card__menu__content__heart, .restaurant__list__card__menu__content .heart {
+.restaurant__list__card__menu__content__heart-toggle, .restaurant__list__card__menu__content .heart {
   top: 1rem;
   right: 1.5rem;
 }
