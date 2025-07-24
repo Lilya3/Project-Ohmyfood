@@ -130,11 +130,9 @@
                     .checkmark{
                         background: $color-tertiary;
                         padding: 1.9rem 1.25rem;
-                        overflow: clip;
                         border-top-right-radius: 1rem ;
                         border-bottom-right-radius: 1rem ;
                         transform: translateX(102%);            //solution anim
-                        transition: transform 0.3s ease-in-out;
                     }
 
                     .fa-solid{
@@ -149,6 +147,7 @@
                         }
                 }
         //Animation bar
+        
             &:hover &__right {
                 transform: translateX(-60px);           //Solution anim
                 transition: transform 0.5s ease-in-out ;

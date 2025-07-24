@@ -135,11 +135,9 @@
 .menu__card__box__container__right .checkmark {
   background: #99E2D0;
   padding: 1.9rem 1.25rem;
-  overflow: clip;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   transform: translateX(102%);
-  transition: transform 0.3s ease-in-out;
 }
 .menu__card__box__container__right .fa-solid {
   color: #99E2D0;
