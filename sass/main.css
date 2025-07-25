@@ -106,6 +106,8 @@
   margin: 0;
   padding-bottom: 0.1rem;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__card__box__container__content p {
   font-weight: 250;
@@ -136,6 +138,7 @@
   padding: 1.9rem 1.25rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  overflow: clip;
   transform: translateX(102%);
 }
 .menu__card__box__container__right .fa-solid {
