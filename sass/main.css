@@ -70,7 +70,7 @@
   margin: 0.5rem;
 }
 .menu__dishe .heart {
-  top: 1rem;
+  top: 1.3rem;
   right: 1rem;
 }
 .menu__card__title {
@@ -241,7 +241,7 @@
   }
   .menu__dishe label .heart {
     display: flex;
-    top: 0.6rem;
+    top: 1rem;
   }
   .menu__card {
     width: 60%;
@@ -282,6 +282,7 @@ button {
   display: inline-block;
   width: 25px;
   height: 25px;
+  bottom: 0.5rem;
 }
 
 .heart-toggle input {
@@ -692,7 +693,7 @@ a p {
   padding: 0.1rem 0 0.1rem 0;
 }
 .restaurant__list__card__menu__content__heart-toggle, .restaurant__list__card__menu__content .heart {
-  top: 1rem;
+  top: 1.8rem;
   right: 1.5rem;
 }
 .restaurant__list__card__menu__content h4 {
