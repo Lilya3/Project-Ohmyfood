@@ -2,8 +2,7 @@
 
 button{
     text-decoration: none;
-    font-family: $font-family-body;
-    font-size: $fs-base;
+    font: $fs-base $font-family-body;
     outline: none;
     border: none;
 }
@@ -50,11 +49,9 @@ button{
 
 .heart {
   display: block;
-  height: 90%;
-  background-image: url("../assets/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+  height: 90%;
+  background: url("../assets/heart.svg") no-repeat center;
   cursor: pointer;
 }
 
@@ -66,10 +63,7 @@ button{
   left: 0;
   width: 100%;
   height: 0%;
-  background-image: url("../assets/heart_fill.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../assets/heart_fill.svg") center/contain no-repeat;
   transition: height 0.4s ease;
 }
 

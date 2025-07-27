@@ -10,20 +10,17 @@
 
 .fa-mobile-screen-button,
 .fa-list-ul{
-    font-size: 20px;
+    font-size: $fs-section-title;
     color: grey;
 }
 
 .fa-store{
-    font-size: 18px;
+    font-size: $fs-medium;
     color:$color-primary;
 }
 
 body{
-    font-family: $font-family-body;
-    font-style: normal;
-    font-size: $fs-base;
-    font-weight: $fw-medium;
+    font: normal $fw-medium $fs-base $font-family-body;
     min-width: 360px;
 }
 
@@ -44,8 +41,7 @@ span{
 h1{
     text-align: center;
     margin: 1rem;
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-header;
+    font: $fw-regular $fs-height-header $font-family-secondary;
 }
 
 h2{
@@ -146,11 +142,8 @@ a p{
 
                     &::placeholder{
                         color: darken(grey, 30);
-                        font-family: $font-family-body;
-                        font-size: $fs-base;
-                        font-weight: 00;
+                        font: $fw-semibold $fs-base $font-family-body;
                         opacity: 1;
-                        font-weight: $fw-medium;
                     }
                 }
             }                
@@ -168,11 +161,11 @@ a p{
 //========================= Section presentation =================================//
 
 .presentation {
-    background-color:rgba(whitesmoke, $opacity-medium);
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:rgba(whitesmoke, $opacity-medium);
+    width: 100%;
     padding: 1rem 0 3rem 0;
     position: relative;
     z-index: 1;
@@ -246,9 +239,9 @@ a p{
                     padding: 2rem 2rem 1.9rem 2rem;
                     gap: 1.5rem;
                 }
+            }
         }
     }
-}
 
 @media (min-width:768px){
     .functioning{
@@ -350,7 +343,7 @@ a p{
                         z-index: 1;
             
                             p{
-                            color: #008766;
+                            color: $color-label;
                             margin: 0;
                             }
                         }
@@ -374,9 +367,9 @@ a p{
                     }
 
                     p{
+                        font-weight:$fw-light;
                         font-size: 1.063rem;
                         padding: 0 0 1rem 1rem;
-                        font-weight:$fw-light;
                     }
                 } 
             }
@@ -409,8 +402,8 @@ a p{
                     height: 225px;
                     max-width: 40%;
                     margin-bottom: 2rem;
+
                     &__container{
-                        
                         &__photo {
                             display: block;
                             width: 100%;

@@ -19,12 +19,14 @@
         &__photo2{
             width: 100%;
             object-fit: cover;
-            max-height: 300px;
             object-position: center 50%;
+            max-height: 300px;
         }
 }
 
 .menu{
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 2;
     border-top-left-radius: 3rem;
@@ -32,8 +34,6 @@
     background-color: whitesmoke;
     margin-top: -40px;
     padding: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
 
         .btn-position{
             text-align: center;
@@ -49,11 +49,12 @@
             right: 0.5rem;
             
             h1{
+                font-size: $fs-height-title;
                 margin: 0.5rem;
             }
 
             .heart{
-                top: 1.3rem;
+                top: 1.6rem;
                 right: 1rem;
             }
         }
@@ -91,8 +92,8 @@
                         align-content: center;
 
                             h3{
-                                font-size: 18px;
-                                font-weight: 500;
+                                font-size: $fs-medium;
+                                font-weight: $fw-semibold;
                                 margin: 0;
                                 padding-bottom: 0.1rem;
                                 white-space: nowrap;
@@ -102,8 +103,8 @@
                             }
                         
                             p{
-                                font-weight: 250;
-                                font-size: 15px;
+                                font-weight: $fw-extra-light;
+                                font-size: $fs-small;
                                 margin: 0;
                                 white-space: nowrap;
                                 overflow:hidden;
@@ -118,7 +119,7 @@
 
                         .price {
                             white-space: nowrap;
-                            font-weight: bold;
+                            font-weight: $fw-bold;
                             color: #353535;
                             margin-bottom: 0.5rem;
                             position: relative;

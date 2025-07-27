@@ -2,7 +2,6 @@
 // Font Family variables
 // ----------------------
 
-$font-weight-header:normal;
 $font-family-title:"shrikhand";
 $font-family-body:"roboto";
 $font-family-secondary:"shrikhand";
@@ -11,18 +10,19 @@ $font-family-secondary:"shrikhand";
 // Font size variables
 // ----------------------
 
-$fs-small:        0.875rem;   // 14px - descriptions sous les plats
-$fs-base:         1rem;       // 16px - corps de texte standard
-$fs-medium:       1.125rem;   // 18px - noms des plats
-$fs-section-title:1.25rem;    // 20px - titres comme "Fonctionnement"
-$fs-card-title:   1.375rem;   // 22px - noms de restaurants
-$fs-page-title:   1.5rem;     // 24px - "Réservez le menu..." (titre principal)
-$fs-height-title: 1.75rem;   // 28px - La palette du goût page 2.
-
+$fs-small:        0.938rem;     //15px - descriptions sous les plats
+$fs-base:         1rem;         //16px - corps de texte standard
+$fs-medium:       1.125rem;     //18px - noms des plats
+$fs-section-title:1.25rem;      //20px - titres comme "Fonctionnement"
+$fs-card-title:   1.375rem;     //22px - noms de restaurants
+$fs-page-title:   1.5rem;       //24px - "Réservez le menu..." (titre principal)
+$fs-height-title: 1.75rem;      //28px - La palette du goût page 2.
+$fs-height-header: 2rem;        //32px - H1 - Ohmyfood
 // ----------------------
 // Font weight variables
 // ----------------------
 
+$fw-extra-light:  250;
 $fw-light:        300;
 $fw-regular:      400;
 $fw-medium:       450;
@@ -37,6 +37,7 @@ $fw-bold:         700;
 $color-primary: #9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
+$color-label:#008766;
 $boxshadowdefault: 0px 5px 10px rgba(grey, 0.25);
 
 // ----------------------

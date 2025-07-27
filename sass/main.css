@@ -38,12 +38,14 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 300px;
   -o-object-position: center 50%;
      object-position: center 50%;
+  max-height: 300px;
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 2;
   border-top-left-radius: 3rem;
@@ -51,8 +53,6 @@
   background-color: whitesmoke;
   margin-top: -40px;
   padding: 1rem 1rem;
-  display: flex;
-  flex-direction: column;
 }
 .menu .btn-position {
   text-align: center;
@@ -67,10 +67,11 @@
   right: 0.5rem;
 }
 .menu__dishe h1 {
+  font-size: 1.75rem;
   margin: 0.5rem;
 }
 .menu__dishe .heart {
-  top: 1.3rem;
+  top: 1.6rem;
   right: 1rem;
 }
 .menu__card__title {
@@ -101,7 +102,7 @@
   align-content: center;
 }
 .menu__card__box__container__content h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   margin: 0;
   padding-bottom: 0.1rem;
@@ -111,7 +112,7 @@
 }
 .menu__card__box__container__content p {
   font-weight: 250;
-  font-size: 15px;
+  font-size: 0.938rem;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -123,7 +124,7 @@
 }
 .menu__card__box__container__right .price {
   white-space: nowrap;
-  font-weight: bold;
+  font-weight: 700;
   color: #353535;
   margin-bottom: 0.5rem;
   position: relative;
@@ -254,8 +255,7 @@
 }
 button {
   text-decoration: none;
-  font-family: "roboto";
-  font-size: 1rem;
+  font: 1rem "roboto";
   outline: none;
   border: none;
 }
@@ -294,11 +294,9 @@ button {
 
 .heart {
   display: block;
-  height: 90%;
-  background-image: url("../assets/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+  height: 90%;
+  background: url("../assets/heart.svg") no-repeat center;
   cursor: pointer;
 }
 
@@ -309,10 +307,7 @@ button {
   left: 0;
   width: 100%;
   height: 0%;
-  background-image: url("../assets/heart_fill.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../assets/heart_fill.svg") center/contain no-repeat;
   transition: height 0.4s ease;
 }
 
@@ -361,7 +356,7 @@ footer a i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 0.875rem;
+    font-size: 0.938rem;
     padding-bottom: 0.5rem;
   }
   footer .contact a {
@@ -371,7 +366,7 @@ footer a i {
   footer .contact a i {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.938rem;
   }
   footer .contact > .informations {
     padding-left: 1rem;
@@ -387,20 +382,17 @@ footer a i {
 
 .fa-mobile-screen-button,
 .fa-list-ul {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: grey;
 }
 
 .fa-store {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9356DC;
 }
 
 body {
-  font-family: "roboto";
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 450;
+  font: normal 450 1rem "roboto";
   min-width: 360px;
 }
 
@@ -420,8 +412,7 @@ span {
 h1 {
   text-align: center;
   margin: 1rem;
-  font-family: "shrikhand";
-  font-weight: normal;
+  font: 400 2rem "shrikhand";
 }
 
 h2 {
@@ -512,19 +503,13 @@ a p {
 }
 .frame__searchbar__text input[type=text]::-moz-placeholder {
   color: rgb(51.5, 51.5, 51.5);
-  font-family: "roboto";
-  font-size: 1rem;
-  font-weight: 0;
+  font: 500 1rem "roboto";
   opacity: 1;
-  font-weight: 450;
 }
 .frame__searchbar__text input[type=text]::placeholder {
   color: rgb(51.5, 51.5, 51.5);
-  font-family: "roboto";
-  font-size: 1rem;
-  font-weight: 0;
+  font: 500 1rem "roboto";
   opacity: 1;
-  font-weight: 450;
 }
 
 @media (min-width: 768px) {
@@ -533,11 +518,11 @@ a p {
   }
 }
 .presentation {
-  background-color: rgba(245, 245, 245, 0.4);
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(245, 245, 245, 0.4);
+  width: 100%;
   padding: 1rem 0 3rem 0;
   position: relative;
   z-index: 1;
@@ -633,7 +618,7 @@ a p {
     align-items: end;
     white-space: nowrap;
     margin-right: 1rem;
-    font-size: 0.875rem;
+    font-size: 0.938rem;
   }
 }
 .restaurant {
@@ -707,9 +692,9 @@ a p {
   font-weight: 700;
 }
 .restaurant__list__card__menu__content p {
+  font-weight: 300;
   font-size: 1.063rem;
   padding: 0 0 1rem 1rem;
-  font-weight: 300;
 }
 
 @media (min-width: 768px) {
