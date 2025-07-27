@@ -3,12 +3,13 @@
 button{
     text-decoration: none;
     font-family: $font-family-body;
+    font-size: $fs-base;
     outline: none;
     border: none;
 }
 
 .btn-large{
-    padding: 18px 30px ;
+    padding: 17px 30px ;
 }
 
 .btn-short{
@@ -18,7 +19,6 @@ button{
 
 .btn{
     color: white;
-    font-size: $fs-medium;
     background: linear-gradient(175deg, $color-secondary -30%, $color-primary 100%);
     box-shadow: $boxshadowdefault;
     border-radius: 2.5rem;
