@@ -19,7 +19,6 @@
     color:$color-primary;
 }
 
-
 body{
     font-family: $font-family-body;
     font-style: normal;
@@ -114,12 +113,7 @@ a p{
 
 .frame{
     display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    flex-direction: row;
     justify-content: center;
-    gap:1rem;
-    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: rgba(darken(whitesmoke, 20), $opacity-medium);
@@ -131,11 +125,17 @@ a p{
             display: flex;
             justify-content: center;
 
+            &__logo{
+                .fa-solid{
+                margin-left: 3rem;
+                color: darken(grey, 30);
+                }
+            }
             &__text{
                 text-align: center;
 
                 input[type="text"] {
-                    text-align: center;
+                    margin-left: 1rem;
                     border: none;
                     outline: none;
                     background-color: transparent;
@@ -145,16 +145,18 @@ a p{
                     }
 
                     &::placeholder{
-                        color: black;
+                        color: darken(grey, 30);
+                        font-family: $font-family-body;
                         font-size: $fs-base;
+                        font-weight: 00;
                         opacity: 1;
                         font-weight: $fw-medium;
-
                     }
                 }
             }                
         }
     }
+
 
 @media (min-width:768px){
     .frame{

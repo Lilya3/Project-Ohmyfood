@@ -482,12 +482,7 @@ a p {
 }
 .frame {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-direction: row;
   justify-content: center;
-  gap: 1rem;
-  width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: rgba(194, 194, 194, 0.4);
@@ -499,11 +494,15 @@ a p {
   display: flex;
   justify-content: center;
 }
+.frame__searchbar__logo .fa-solid {
+  margin-left: 3rem;
+  color: rgb(51.5, 51.5, 51.5);
+}
 .frame__searchbar__text {
   text-align: center;
 }
 .frame__searchbar__text input[type=text] {
-  text-align: center;
+  margin-left: 1rem;
   border: none;
   outline: none;
   background-color: transparent;
@@ -512,14 +511,18 @@ a p {
   opacity: 0.4;
 }
 .frame__searchbar__text input[type=text]::-moz-placeholder {
-  color: black;
+  color: rgb(51.5, 51.5, 51.5);
+  font-family: "roboto";
   font-size: 1rem;
+  font-weight: 0;
   opacity: 1;
   font-weight: 450;
 }
 .frame__searchbar__text input[type=text]::placeholder {
-  color: black;
+  color: rgb(51.5, 51.5, 51.5);
+  font-family: "roboto";
   font-size: 1rem;
+  font-weight: 0;
   opacity: 1;
   font-weight: 450;
 }
