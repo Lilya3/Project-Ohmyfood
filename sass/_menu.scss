@@ -1,8 +1,6 @@
 @use 'variables' as *;
 
 
-
-
 .hero{
     position: relative;
     z-index: 1;
@@ -127,17 +125,13 @@
                             bottom: 0.5rem;
                         }
 
-                        &__checkmark{
-                            background-color: $color-tertiary;
-                        }
-
                     .checkmark{
                         background: $color-tertiary;
                         padding: 1.9rem 1.25rem;
                         border-top-right-radius: 1rem ;
                         border-bottom-right-radius: 1rem ;
                         overflow: clip;
-                        transform: translateX(102%);            //solution anim
+                        transform: translateX(102%);            
                     }
 
                     .fa-solid{
@@ -151,21 +145,19 @@
                         padding: 0.2rem;
                         }
                 }
+
         //Animation bar
         
             &:hover &__right {
-                transform: translateX(-60px);           //Solution anim
+                transform: translateX(-60px);           
                 transition: transform 0.5s ease-in-out ;
             }
-
-            &:hover &__checkmark{                       //Solution anim
-                transform: translateX(0);
-            }
-
             }
         }
     }
+
 // Animations menu bar
+
     .animated-step {
         opacity: 0;
         animation: fadeInLeft 0.2s ease-out forwards;
@@ -202,6 +194,7 @@
             object-position: center 60%;
         }
     }
+    
     .menu{
         display: flex;
         flex-direction: column;

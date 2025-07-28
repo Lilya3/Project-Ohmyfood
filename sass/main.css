@@ -131,9 +131,6 @@
   left: 2.9rem;
   bottom: 0.5rem;
 }
-.menu__card__box__container__right__checkmark {
-  background-color: #99E2D0;
-}
 .menu__card__box__container__right .checkmark {
   background: #99E2D0;
   padding: 1.9rem 1.25rem;
@@ -154,9 +151,6 @@
 .menu__card__box__container:hover .menu__card__box__container__right {
   transform: translateX(-60px);
   transition: transform 0.5s ease-in-out;
-}
-.menu__card__box__container:hover .menu__card__box__container__checkmark {
-  transform: translateX(0);
 }
 .menu .animated-step {
   opacity: 0;
