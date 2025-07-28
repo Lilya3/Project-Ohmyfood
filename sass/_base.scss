@@ -1,4 +1,61 @@
-@forward 'header';
-@forward 'menu';
-@forward 'button';
-@forward 'footer';
+@use 'variables' as *;
+
+//========================= General =================================//
+
+*{
+    margin: 0;
+}
+
+
+.fa-mobile-screen-button,
+.fa-list-ul{
+    font-size: $fs-section-title;
+    color: grey;
+}
+
+.fa-store{
+    font-size: $fs-medium;
+    color:$color-primary;
+}
+
+body{
+    font: normal $fw-medium $fs-base $font-family-body;
+    min-width: 360px;
+}
+
+.main-container{
+    box-sizing: border-box;
+}
+
+section{
+    padding-top: 2rem;
+}
+
+h1,h2,h3,h4,p,
+span{
+    cursor: default;
+}
+
+
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+
+h1.title-menu{
+    font: $fw-regular $fs-height-title $font-family-secondary;
+    text-align: start;
+}
+
+h2{
+    margin-left: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+p{
+    font-weight: $fw-semibold;
+}
+
+a p{
+    cursor: pointer;
+}
