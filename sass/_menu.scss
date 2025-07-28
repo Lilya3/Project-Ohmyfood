@@ -149,7 +149,7 @@
         //Animation bar
         
             &:hover &__right {
-                transform: translateX(-60px);           
+                transform: translateX(-60px);        
                 transition: transform 0.5s ease-in-out ;
             }
             }
@@ -194,7 +194,7 @@
             object-position: center 60%;
         }
     }
-    
+
     .menu{
         display: flex;
         flex-direction: column;
