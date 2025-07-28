@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use "sass:color";
 
 button{
     text-decoration: none;
@@ -25,9 +26,10 @@ button{
 
     &:hover{
         background: linear-gradient(
-            170deg,
-            lighten($color-secondary, 6) -30%,
-            lighten($color-primary, 5) 100%);
+          170deg,
+          color.adjust($color-secondary, $lightness: 6%) -30%,
+          color.adjust($color-primary, $lightness: 5%) 100%
+      );
     }
 }
 
